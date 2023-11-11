@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public Sprite seventyFivePercentSprite;
     public Sprite fiftyPercentSprite;
     public Sprite twentyFivePercentSprite;
+    public Sprite fivePercentSprite;
 
     public int maxHealth = 100;
     public int currentHealth = 100;
@@ -32,9 +33,13 @@ public class PlayerHealth : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().sprite = fiftyPercentSprite;
         }
-        else
+        else if(currentHealth > 0)
         {
             GetComponent<SpriteRenderer>().sprite = twentyFivePercentSprite;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = fivePercentSprite;
         }
     }
 
@@ -52,9 +57,13 @@ public class PlayerHealth : MonoBehaviour
         {
             spriteRenderer.sprite = fiftyPercentSprite;
         }
-        else
+        else if(currentHealth >0)
         {
             spriteRenderer.sprite = twentyFivePercentSprite;
+        }
+        else
+        {
+            spriteRenderer.sprite = fivePercentSprite;
         }
     }
     private void Update()
@@ -64,7 +73,7 @@ public class PlayerHealth : MonoBehaviour
     
         if ( Input.GetKeyDown(KeyCode.Q) )
         {
-            TakeDamage(25);
+            TakeDamage(2);
             Debug.Log("Danno");
         }
     }
