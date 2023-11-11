@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 8f;
     private float jumpPower = 16f;
     private CapsuleCollider myCollider;
+    
    
     [Header("Ground Check")]
     public Transform groundCheck;
@@ -23,8 +24,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Dash Variables")]
     private bool canDash = true;
     private bool isDashing;
-    private float dashPower=24f;
-    private float dashTime=0.4f;
+    private float dashPower=14f;
+    private float dashTime=0.2f;
     private float dashCooldown=2f;
     [SerializeField]private bool isPowerUp=false;
 
@@ -33,7 +34,10 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         myCollider = GetComponent<CapsuleCollider>();
     }
-
+    private void Start()
+    {
+        Physics.gravity = new Vector3(0, -22, 0);
+    }
 
     private void Update()
     {
