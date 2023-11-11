@@ -43,7 +43,7 @@ public class VendingMachineManager : MonoBehaviour
         Slots.Clear();
         for (int i = 0; i < row * col; i++)
         {
-            Vector3 pos = new Vector3(0f, -(i / 6) * 0.182323f * 10f, -(i % 6) * 0.1382006f * 10f);
+            Vector3 pos = new Vector3((i % 6) * 0.1382006f * 10f, -(i / 6) * 0.182323f * 10f, 0f);
             pos += SlotStartPoint.position;
 
             GameObject slot = Instantiate(SlotPrefab, pos, Quaternion.identity, gameObject.transform);
