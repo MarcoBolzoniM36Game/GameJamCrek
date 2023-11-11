@@ -11,10 +11,13 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private float speed = 8f;
     private float jumpPower = 16f;
+    private CapsuleCollider myCollider;
    
     [Header("Ground Check")]
     public Transform groundCheck;
     public LayerMask groundLayer;
+    public LayerMask groundLayerS;
+    public LayerMask groundLayer0;
     private bool isJump=false;
 
     [Header("Dash Variables")]
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        myCollider = GetComponent<CapsuleCollider>();
     }
 
 
@@ -52,6 +56,15 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftShift) && canDash && isPowerUp)
         {
             StartCoroutine(Dash());
+        }
+
+        if (Input.GetKeyDown(KeyCode.S) && IsGroundedS())
+        {
+            myCollider.enabled = false;
+        }
+        else if (Input.GetKeyUp(KeyCode.S) || IsGrounded0())
+        {
+           myCollider.enabled = true;
         }
     }
 
@@ -80,9 +93,23 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-    private bool IsGrounded()
+    private bool IsGrounded0()
     {
-        return Physics.CheckSphere(groundCheck.position, 0.2f, groundLayer);
+        return Physics.CheckSphere(groundCheck.position, 0.2f, groundLayer0); 
+        
+        
+        //return GetComponent<Rigidbody>().velocity.y <= 0;
+    }private bool IsGrounded()
+    {
+        return Physics.CheckSphere(groundCheck.position, 0.2f, groundLayer); 
+       
+        
+        //return GetComponent<Rigidbody>().velocity.y <= 0;
+    }
+    
+    private bool IsGroundedS()
+    {
+        return Physics.CheckSphere(groundCheck.position, 0.2f, groundLayerS);
         
         //return GetComponent<Rigidbody>().velocity.y <= 0;
     }
