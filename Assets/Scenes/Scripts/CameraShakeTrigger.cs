@@ -12,5 +12,8 @@ public class CameraShakeTrigger : MonoBehaviour
             CameraShake.Invoke();
             Debug.Log ("Shake");
         }
+
+      
+       
     }
 }
