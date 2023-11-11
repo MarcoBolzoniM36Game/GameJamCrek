@@ -13,8 +13,7 @@ public class Client : MonoBehaviour
     void Start()
     {
         ActiveClient(true);
-        //StartCoroutine("CalculateTime");
-        //StartCoroutine(CalculateTime());
+
     }
 
     
@@ -29,10 +28,8 @@ public class Client : MonoBehaviour
         {
             ActiveClient(true);
         }
-
-
-
-        StateScore();
+        
+        CountClient();
     }
 
     void ActiveClient(bool i) 
@@ -51,25 +48,19 @@ public class Client : MonoBehaviour
         }
     }
 
-
-    //IEnumerator CalculateTime()
-    //{
-    //    yield return new WaitForSeconds(10);
-    //    Debug.Log("Il tempo passa");
-    //}
-    private void StateScore()
+    private void StateScore(int i)
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            score.AddScore(5);
+            score.AddScore(5 * i);
         }
         else if (Input.GetKeyDown(KeyCode.T))
         {
-            score.AddScore(3);
+            score.AddScore(3 * i);
         }
         else if (Input.GetKeyDown(KeyCode.Y))
         {
-            score.AddScore(4);
+            score.AddScore(4 * i);
         }
         else if (Input.GetKeyDown(KeyCode.U))
         {
@@ -78,9 +69,35 @@ public class Client : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.I))
         {
-            score.AddScore(-2);
+            score.AddScore(-2 * i);
         }
     }
 
-    
+    private void CountClient()
+    {
+        for (int i = 0; i < clientList.Length; i++)
+        {
+            if (i == 0)
+            {
+                StateScore(1);
+            }
+            else if (i == 1)
+            {
+                StateScore(2);
+            }
+            else if (i == 2)
+            {
+                StateScore(3);
+            }
+            else if (i == 3)
+            {
+                StateScore(4);
+            }
+            else if (i == 4)
+            {
+                StateScore(5);
+            }
+
+        }
+    }
 }
