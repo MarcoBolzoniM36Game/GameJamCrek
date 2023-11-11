@@ -35,7 +35,7 @@ public class RageBarManager : MonoBehaviour
 
         if (currentRage == 1000)
         {
-            currentRage = 0;
+            currentRage = 250;
             iconaRage.anchoredPosition = new Vector2(currentRage, 0);
             Debug.Log("Rabbia Massima");
         }

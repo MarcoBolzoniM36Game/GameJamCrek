@@ -73,7 +73,7 @@ public class PlayerHealth : MonoBehaviour
     
         if ( Input.GetKeyDown(KeyCode.Q) )
         {
-            TakeDamage(2);
+            TakeDamage(20);
             Debug.Log("Danno");
         }
     }
