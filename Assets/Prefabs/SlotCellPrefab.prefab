@@ -194,8 +194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0877b7b4061ea2140a5038f05f08f19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlatLight: {fileID: 0}
-  Platform: {fileID: 0}
+  PlatLight: {fileID: 5184218204777453305}
+  Platform: {fileID: 8587809284596093439}
   StartProductPosition: {fileID: 8014996369095811457}
   ProductStartPoints:
   - {fileID: 8014996369095811457}
@@ -203,8 +203,8 @@ MonoBehaviour:
   - {fileID: 5533121476063540324}
   - {fileID: 6341586184215527508}
   SlotProducts: []
-  SlotLight: {fileID: 0}
-  Anim: {fileID: 0}
+  SlotLight: {fileID: 5184218204777453305}
+  Anim: {fileID: 6818177868417808840}
   Anim2: {fileID: 7543288975777524365}
 --- !u!1 &3293389165706101578
 GameObject:
