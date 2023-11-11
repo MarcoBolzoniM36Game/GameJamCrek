@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer0;
     private bool isJump=false;
 
+
     [Header("Dash Variables")]
     private bool canDash = true;
     private bool isDashing;
@@ -65,37 +66,43 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S) && IsGroundedS())
         {
             myCollider.enabled = false;
+     
         }
         else if (Input.GetKeyUp(KeyCode.S) || IsGrounded0())
         {
            myCollider.enabled = true;
+
         }
+
     }
 
     public void Jump(InputAction.CallbackContext context)
     {
+        
         if (!isJump && IsGrounded())
         {
+            
 
             if (context.performed && IsGrounded())
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpPower);
                 isJump = true;
+                
             }
-            
+
         }
 
             if (context.canceled && rb.velocity.y > 0f)
             {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+           
             }
 
         if (IsGrounded())
         {
             isJump = false;
+            
         }
-
-
     }
     private bool IsGrounded0()
     {
