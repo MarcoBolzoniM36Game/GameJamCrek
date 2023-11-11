@@ -64,7 +64,6 @@ public class Client : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.U))
         {
-            //score.AddScore(25);
             Debug.Log("VAFFANCULO CONTE!!!!!");
         }
         else if (Input.GetKeyDown(KeyCode.I))
@@ -83,19 +82,19 @@ public class Client : MonoBehaviour
             }
             else if (i == 1)
             {
-                StateScore(2);
+                StateScore(1);
             }
             else if (i == 2)
             {
-                StateScore(3);
+                StateScore(2);
             }
             else if (i == 3)
             {
-                StateScore(4);
+                StateScore(2);
             }
             else if (i == 4)
             {
-                StateScore(5);
+                StateScore(3);
             }
 
         }
