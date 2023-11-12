@@ -17,6 +17,9 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth = 100;
     private SpriteRenderer spriteRenderer;
+    public Transform spawnPoint;
+    public VisualEffect vfxRespawn;
+    public GameObject playerPrefab;
 
 
 
@@ -74,7 +77,36 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    private void RespawnPlayer()
+    {
+        if (currentHealth == 0)
+        {
+            Respawn();
+            //Instantiate(gameObject, spawnPoint.position, spawnPoint.rotation);
+            //transform.position = spawnPoint.position;
+            //Debug.Log("DIOMER");
+        }
+    }
+    private void Respawn()
+    {
+        Instantiate(vfxRespawn, spawnPoint.position, spawnPoint.rotation);
+        //Instantiate(gameObject, spawnPoint.position, spawnPoint.rotation);
+        //StartCoroutine(nameof(RespawnCoroutine));
+        transform.position = spawnPoint.position;
+
+    }
+
+    //IEnumerator RespawnCoroutine()
+    //{
+    //    Instantiate(respawn, spawnPoint.position, spawnPoint.rotation);
+    //    Invoke( RespawnPlayer, delayTime);
+    //    //yi/*eld return new WaitForSeconds(4);*/
+    //    Debug.Log("HoAspettato4FottutiSecondi");
+    //    //Instantiate(gameObject, spawnPoint.position, spawnPoint.rotation);
+
+    //}
+
 }
-   
+
 
 
