@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ClientManager : MonoBehaviour
 {
@@ -11,7 +12,10 @@ public class ClientManager : MonoBehaviour
    
     public VendingMachineManager vendingMachine;
     public PlayerMovement playerMovement;
-    
+    public RageBarManager rageManger;
+
+    public UnityEvent ChangeClient = new UnityEvent();
+
     void Start()
     {
         ActiveClient(true);
@@ -52,25 +56,31 @@ public class ClientManager : MonoBehaviour
 
     private void StateScore(int i)
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        
+
+        if (rageManger.currentRage >= 400)
         {
             score.AddScore(5 * i);
         }
-        else if (Input.GetKeyDown(KeyCode.T))
+        else if (rageManger.currentRage >= 800)
         {
             score.AddScore(3 * i);
         }
-        else if (Input.GetKeyDown(KeyCode.Y))
+        else if (rageManger.currentRage >= 1200)
         {
             score.AddScore(4 * i);
         }
-        else if (Input.GetKeyDown(KeyCode.U))
+        else if (rageManger.currentRage >= 1600)
         {
-            Debug.Log("VAFFANCULO CONTE!!!!!");
+            ActiveClient(false);
+            ChangeClient?.Invoke();
         }
-        else if (Input.GetKeyDown(KeyCode.I))
+        else if (rageManger.currentRage == 0)
         {
             score.AddScore(-2 * i);
+            // tolgo una vita al player
+            ActiveClient(false);
+            ChangeClient?.Invoke();
         }
     }
 

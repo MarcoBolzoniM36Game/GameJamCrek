@@ -19,6 +19,11 @@ public class GameFlowManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        RestartGameFlow();
+    }
+
+    public void RestartGameFlow()
+    {
         float currentTime = Time.time;
         if (currentTime >= lastTime + StartDelay)
         {
@@ -36,4 +41,7 @@ public class GameFlowManager : MonoBehaviour
             lastTime = currentTime;
         }
     }
+
+
+
 }
