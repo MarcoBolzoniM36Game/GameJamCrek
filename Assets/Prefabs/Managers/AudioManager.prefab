@@ -88,6 +88,22 @@ MonoBehaviour:
     playOnAwake: 0
     loop: 1
     spatialBlend: 0
+  - name: Puff
+    clip: {fileID: 8300000, guid: 18cf859627d6ebd43ab10e6e358e4302, type: 3}
+    outputAudioMixerGroup: {fileID: 1982559544931740828, guid: 72e9eb48ffcc8a84c8cd50bb6b2e398c,
+      type: 2}
+    mute: 0
+    playOnAwake: 0
+    loop: 0
+    spatialBlend: 0
+  - name: Drop
+    clip: {fileID: 8300000, guid: d5335a85fad91624f9de21d6e96319a2, type: 3}
+    outputAudioMixerGroup: {fileID: 1982559544931740828, guid: 72e9eb48ffcc8a84c8cd50bb6b2e398c,
+      type: 2}
+    mute: 0
+    playOnAwake: 0
+    loop: 0
+    spatialBlend: 0
   masterSlider: {fileID: 0}
   musicSlider: {fileID: 0}
   voiceSlider: {fileID: 0}
@@ -102,12 +118,13 @@ AudioSource:
   m_GameObject: {fileID: 1741445198308294167}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 1982559544931740828, guid: 72e9eb48ffcc8a84c8cd50bb6b2e398c,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 18cf859627d6ebd43ab10e6e358e4302, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -202,4 +219,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 7414523876191903258}
-  AudioClipName: ButtonSingle

@@ -8,6 +8,9 @@ public class FoodBehaviour : MonoBehaviour
     [SerializeField]
     private GameObject vfxPrefab;
 
+    
+    public TestAudio pippo;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,7 +23,7 @@ public class FoodBehaviour : MonoBehaviour
             }
             Destroy(gameObject);
             CameraShake.Invoke();
-
+            pippo.Play("Drop");
         }
         else
         {
@@ -33,6 +36,8 @@ public class FoodBehaviour : MonoBehaviour
                 }
                 Destroy(gameObject);
                 Instantiate(vfxPrefab, transform.position, Quaternion.identity);
+
+                pippo.Play("Puff");
 
                 //if (vfxPrefab != null)
                 //{

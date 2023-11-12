@@ -80,6 +80,13 @@ public class VendingMachineManager : MonoBehaviour
             GameObject prefab = productsPrefabs[Random.Range(0, productsPrefabs.Count)];
             GameObject product = Instantiate(prefab, slot.ProductStartPoints[i].position, Quaternion.identity, slot.ProductStartPoints[i]);
             slot.SlotProducts.Add(product);
+            FoodBehaviour ta =  product.GetComponent<FoodBehaviour>();
+
+            if(ta != null)
+            {
+
+                ta.pippo = AudioManager.Instance.GetComponent<TestAudio>();
+            }
         }
     }
 
