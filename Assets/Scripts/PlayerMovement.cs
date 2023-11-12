@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     [Header("Dash Variables")]
-    private bool canDash = true;
+    public bool canDash = false;
     private bool isDashing;
     private float dashPower=15f;
     private float dashTime=0.2f;
