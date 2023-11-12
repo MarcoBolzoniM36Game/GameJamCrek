@@ -7,6 +7,9 @@ public class GameFlowManager : MonoBehaviour
     [SerializeField]
     private ClientManager clientManager;
 
+    [SerializeField]
+    private TestAudio audio;
+
     float StartDelay = 3f;
 
     // Start is called before the first frame update
@@ -28,6 +31,7 @@ public class GameFlowManager : MonoBehaviour
 
     public IEnumerator AptendDelay()
     {
+        audio.Play("InsertCoin");
         once = false;
         yield return new WaitForSeconds(StartDelay);
         // attendo la scadenza di un timer e
