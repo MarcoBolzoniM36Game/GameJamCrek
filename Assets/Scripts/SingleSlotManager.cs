@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class SingleSlotManager : MonoBehaviour
 {
@@ -36,12 +37,16 @@ public class SingleSlotManager : MonoBehaviour
     [SerializeField]
     private Transform vfxSpawn;
 
+    [SerializeField]
+    private Light slotLight;
+
     public void Illuminate()
     {
         if (SlotLight != null)
         {
-            myMaterial.SetFloat("_FrePower", 0);
-            Debug.Log("Illumino slot ");
+            slotLight.enabled = true;
+            //myMaterial.SetFloat("_FrePower", 0);
+            //Debug.Log("Illumino slot ");
             //PlatLight.GetComponent<MeshRenderer>().material.SetFloat("_FrePower", 0);
             //SlotLight.Enable();
         }
@@ -51,7 +56,8 @@ public class SingleSlotManager : MonoBehaviour
     {
         if (SlotLight != null)
         {
-            myMaterial.SetFloat("_FrePower", 5);
+            slotLight.enabled = false;
+            //myMaterial.SetFloat("_FrePower", 5);
             //Debug.Log("Deillumino slot ");
             //PlatLight.GetComponent<MeshRenderer>().material.SetFloat("_FrePower", 5);
             //SlotLight.Enable();
@@ -83,7 +89,7 @@ public class SingleSlotManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        slotLight.enabled = false;
     }
 
     // Update is called once per frame
