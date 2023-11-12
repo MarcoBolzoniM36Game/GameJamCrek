@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.VFX;
 using static UnityEditor.PlayerSettings;
 
 public class VendingMachineManager : MonoBehaviour
@@ -27,10 +28,19 @@ public class VendingMachineManager : MonoBehaviour
 
     [SerializeField]
     private TestAudio audio;
-
+    [SerializeField]
+    private GameObject player;
+    [SerializeField]
+    private VisualEffect VFX;
+    [SerializeField]
+    private Transform spawnPoint;
+    [SerializeField]
+    private Transform vfxSpawnPoint;
     private void Start()
     {
         SetupMachine(6, 6);
+
+        SpounPlayer();
     }
 
     /// <summary>
@@ -75,6 +85,11 @@ public class VendingMachineManager : MonoBehaviour
         }
     }
 
+    public void SpounPlayer()
+    {
+        Instantiate(VFX, vfxSpawnPoint.position, vfxSpawnPoint.rotation);
+        Instantiate(player,spawnPoint.position, spawnPoint.rotation);
+    }
     
 
     private void Update()
