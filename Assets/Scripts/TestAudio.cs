@@ -19,10 +19,15 @@ public class TestAudio : MonoBehaviour
 
     void Start()
     {
-        Sound sound = AudioManager.Instance.Sounds.FirstOrDefault(o => o.name == "BackgroundMusic");
+        //Sound sound = AudioManager.Instance.Sounds.FirstOrDefault(o => o.name == AudioClipName);
+        //gameObject.SetSound(audioSource, sound);
+        //gameObject.PlaySound(audioSource);
+    }
+
+    public void Play(string clipName)
+    {
+        Sound sound = AudioManager.Instance.Sounds.FirstOrDefault(o => o.name == clipName);
         gameObject.SetSound(audioSource, sound);
         gameObject.PlaySound(audioSource);
     }
-
-
 }
