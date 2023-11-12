@@ -24,6 +24,10 @@ public class VendingMachineManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> productsPrefabs = new List<GameObject>();
 
+
+    [SerializeField]
+    private TestAudio audio;
+
     private void Start()
     {
         SetupMachine(6, 6);
@@ -77,10 +81,10 @@ public class VendingMachineManager : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            SelectFood(3);
-        }
+        //if (Input.GetKeyDown(KeyCode.O))
+        //{
+        //    SelectFood(3);
+        //}
         if (Input.GetKeyDown(KeyCode.R))
         {
             SelectPlatform(4);
@@ -90,6 +94,7 @@ public class VendingMachineManager : MonoBehaviour
 
     public void SelectFood(int howManyFoodDrop)
     {
+        audio.Play("ButtonDouble");
         chosenNumber.Clear();
         for (int i = 0; i < howManyFoodDrop; i++)
         {
