@@ -31,7 +31,10 @@ public class SingleSlotManager : MonoBehaviour
     [SerializeField]
     private Animator Anim2;
 
-
+    [SerializeField]
+    private GameObject vfxPrefab;
+    [SerializeField]
+    private Transform vfxSpawn;
 
     public void Illuminate()
     {
@@ -59,8 +62,13 @@ public class SingleSlotManager : MonoBehaviour
     {
         if (Platform != null)
         {
-            Platform.SetActive(false);
-            // TODO: avviare il particleSystem per la distruzione 
+            if (Platform.activeSelf) {
+                Platform.SetActive(false);
+                if (vfxPrefab != null)
+                {
+                    Instantiate(vfxPrefab, vfxSpawn.position, Quaternion.identity);
+                }
+            }
         }
     }
 

@@ -1787,79 +1787,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1001 &530399408
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.63
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 11.37
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.9823446
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.110548526
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.99387074
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -167.306
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_Name
-      value: Idol_Backe_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866666021909216657, guid: 7040304bb17ce7e40b0f6956e6046839,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 210d3610ada76004eaed41bb9712ff3a, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7040304bb17ce7e40b0f6956e6046839, type: 3}
 --- !u!1 &549607636
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,6 +4284,9 @@ MonoBehaviour:
   fivePercentSprite: {fileID: 21300000, guid: bd81815ecb82fb44ea63f0d8d6a100fe, type: 3}
   maxHealth: 100
   currentHealth: 100
+  spawnPoint: {fileID: 0}
+  vfxRespawn: {fileID: 0}
+  playerPrefab: {fileID: 0}
 --- !u!212 &1338260758
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8622,7 +8552,6 @@ SceneRoots:
   - {fileID: 983305623}
   - {fileID: 2107261749}
   - {fileID: 1051953371}
-  - {fileID: 530399408}
   - {fileID: 85215330}
   - {fileID: 1982185713}
   - {fileID: 1357543694}

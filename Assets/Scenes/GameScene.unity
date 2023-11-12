@@ -920,7 +920,7 @@ MonoBehaviour:
   - {fileID: 7033548095865734083, guid: bed457aa2a766bb40a89ede50291715c, type: 3}
   - {fileID: 8490811332688936096, guid: 561fd8e9649463649bf59f0006bdeee9, type: 3}
   - {fileID: 3125752432706721858, guid: 54b81596413be7248a06e3161810b984, type: 3}
-  audio: {fileID: 0}
+  audio: {fileID: 920223463}
 --- !u!4 &261307244
 Transform:
   m_ObjectHideFlags: 0
@@ -1703,6 +1703,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &538082336 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1868716699713161838, guid: 92f377e35888c57438fee38137d0bc92,
+    type: 3}
+  m_PrefabInstance: {fileID: 1694246402}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9500f5d4a44808f428dbff45e8f07db5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &549607636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2922,6 +2934,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 966759997}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &920223463 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3982240082023163235, guid: c49f9372325636e4e894f2a0a995448d,
+    type: 3}
+  m_PrefabInstance: {fileID: 448196459}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06cae725b50a1874fac7be1b969a0224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &966759996
 GameObject:
   m_ObjectHideFlags: 0
@@ -4106,6 +4130,9 @@ MonoBehaviour:
   fivePercentSprite: {fileID: 21300000, guid: bd81815ecb82fb44ea63f0d8d6a100fe, type: 3}
   maxHealth: 100
   currentHealth: 100
+  spawnPoint: {fileID: 0}
+  vfxRespawn: {fileID: 0}
+  playerPrefab: {fileID: 0}
 --- !u!212 &1338260758
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4190,7 +4217,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerMovement
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 538082336}
     - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
         type: 3}
       propertyPath: vendingMachine
@@ -4343,7 +4370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clientManager: {fileID: 1357543695}
-  audio: {fileID: 0}
+  audio: {fileID: 920223463}
 --- !u!4 &1380338880
 Transform:
   m_ObjectHideFlags: 0
@@ -4880,7 +4907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rageBarManager: {fileID: 1488347962}
   gameFlowManager: {fileID: 1380338879}
-  vendingMachineManager: {fileID: 0}
+  vendingMachineManager: {fileID: 261307243}
 --- !u!1 &1671106803
 GameObject:
   m_ObjectHideFlags: 0

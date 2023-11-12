@@ -127,6 +127,7 @@ Transform:
   - {fileID: 8014996369095811457}
   - {fileID: 4861082273789933459}
   - {fileID: 4430363378050875550}
+  - {fileID: 6592011384411240637}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3604420206990665782
@@ -154,6 +155,9 @@ MonoBehaviour:
   myMaterial: {fileID: 2100000, guid: 0c713829195dfc4418f0bbe05d4d18cf, type: 2}
   Anim: {fileID: 6818177868417808840}
   Anim2: {fileID: 7543288975777524365}
+  vfxPrefab: {fileID: 3432909514106382455, guid: f303c7ab1ab592f4aad1bd2125097838,
+    type: 3}
+  vfxSpawn: {fileID: 6592011384411240637}
 --- !u!1 &3293389165706101578
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +214,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &3317189060491723383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6592011384411240637}
+  m_Layer: 0
+  m_Name: SpawnVFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6592011384411240637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3317189060491723383}
+  serializedVersion: 2
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: -0.415, z: -1.8990002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 555474595124195744}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &3576788429572938156
 GameObject:
   m_ObjectHideFlags: 0
