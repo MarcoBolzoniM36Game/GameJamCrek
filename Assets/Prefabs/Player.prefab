@@ -98,7 +98,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9f75823d5882ae84db7224d02ed36f2f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -246,7 +246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 764469674139431395}
-  anim: {fileID: 0}
   groundCheck: {fileID: 7766132591032089507}
   groundLayer:
     serializedVersion: 2
@@ -259,6 +258,7 @@ MonoBehaviour:
     m_Bits: 256
   canDash: 0
   isPowerUp: 1
+  gameFlowManager: {fileID: 0}
 --- !u!1001 &678280394149803942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -285,7 +285,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 071d36dddd1c2b24ab75e6378c523556,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.269
+      value: -0.289
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 071d36dddd1c2b24ab75e6378c523556,
         type: 3}
