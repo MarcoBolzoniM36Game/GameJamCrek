@@ -45,10 +45,6 @@ public class SingleSlotManager : MonoBehaviour
         if (SlotLight != null)
         {
             slotLight.enabled = true;
-            //myMaterial.SetFloat("_FrePower", 0);
-            //Debug.Log("Illumino slot ");
-            //PlatLight.GetComponent<MeshRenderer>().material.SetFloat("_FrePower", 0);
-            //SlotLight.Enable();
         }
     }
 
@@ -57,10 +53,6 @@ public class SingleSlotManager : MonoBehaviour
         if (SlotLight != null)
         {
             slotLight.enabled = false;
-            //myMaterial.SetFloat("_FrePower", 5);
-            //Debug.Log("Deillumino slot ");
-            //PlatLight.GetComponent<MeshRenderer>().material.SetFloat("_FrePower", 5);
-            //SlotLight.Enable();
         }
     }
 
@@ -86,23 +78,9 @@ public class SingleSlotManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         slotLight.enabled = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //if (Input.GetKeyDown(KeyCode.L))
-        //{
-        //    Illuminate();
-        //}
-        //if (Input.GetKeyDown(KeyCode.H))
-        //{
-        //    HidePlatform();
-        //}
     }
 
     public void FoodFall()

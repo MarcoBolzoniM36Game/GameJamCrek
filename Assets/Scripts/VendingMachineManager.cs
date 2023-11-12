@@ -75,23 +75,6 @@ public class VendingMachineManager : MonoBehaviour
         }
     }
 
-    
-
-    private void Update()
-    {
-
-
-        //if (Input.GetKeyDown(KeyCode.O))
-        //{
-        //    SelectFood(3);
-        //}
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SelectPlatform(4);
-        }
-    }
-
-
     public void SelectFood(int howManyFoodDrop)
     {
         audio.Play("ButtonDouble");
@@ -174,9 +157,4 @@ public class VendingMachineManager : MonoBehaviour
         chosenPlatformNumber.Clear();
     }
 
-    //private void FoodFall(int cellsIndex)
-    //{
-
-
-    //}
 }
