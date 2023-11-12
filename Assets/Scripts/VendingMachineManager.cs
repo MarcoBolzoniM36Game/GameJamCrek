@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.VFX;
-using static UnityEditor.PlayerSettings;
 
 public class VendingMachineManager : MonoBehaviour
 {
@@ -32,8 +30,8 @@ public class VendingMachineManager : MonoBehaviour
     private GameObject player;
     [SerializeField]
     private VisualEffect VFX;
-    [SerializeField]
-    private Transform spawnPoint;
+    //[SerializeField]
+    //private Transform spawnPoint;
     [SerializeField]
     private Transform vfxSpawnPoint;
     private void Start()
@@ -88,7 +86,12 @@ public class VendingMachineManager : MonoBehaviour
     public void SpounPlayer()
     {
         Instantiate(VFX, vfxSpawnPoint.position, vfxSpawnPoint.rotation);
-        Instantiate(player,spawnPoint.position, spawnPoint.rotation);
+        Invoke("Spawn", 4f);
+        
+    }
+    private void Spawn()
+    {
+        player.gameObject.SetActive(true);
     }
     
 
