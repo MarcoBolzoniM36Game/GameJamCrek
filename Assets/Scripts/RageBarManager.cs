@@ -18,7 +18,7 @@ public class RageBarManager : MonoBehaviour
     private void Start()
     {
 
-        currentRage = 250;
+        currentRage = 400;
        
         iconaRage.anchoredPosition = new Vector2(currentRage, 0);
 
@@ -33,9 +33,9 @@ public class RageBarManager : MonoBehaviour
         
 
 
-        if (currentRage == 1000)
+        if (currentRage == 2000)
         {
-            currentRage = 250;
+            currentRage = 400;
             iconaRage.anchoredPosition = new Vector2(currentRage, 0);
             Debug.Log("Rabbia Massima");
         }
@@ -55,7 +55,7 @@ public class RageBarManager : MonoBehaviour
         if (currentRage == 0)
         {
             Debug.Log("ALESSIO MAZZAPIODA");
-            currentRage = 250;
+            currentRage = 400;
             iconaRage.anchoredPosition = new Vector2(currentRage, 0);
         }
 

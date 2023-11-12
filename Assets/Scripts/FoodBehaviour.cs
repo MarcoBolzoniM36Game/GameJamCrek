@@ -16,6 +16,7 @@ public class FoodBehaviour : MonoBehaviour
 
             Destroy(gameObject);
             CameraShake.Invoke();
+
         }
         else
         {
