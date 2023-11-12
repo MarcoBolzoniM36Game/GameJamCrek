@@ -8,7 +8,6 @@ public class GameFlowManager : MonoBehaviour
     private ClientManager clientManager;
 
     float StartDelay = 3f;
-    float lastTime = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -16,30 +15,32 @@ public class GameFlowManager : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    bool once = true;
+
     void Update()
     {
-        RestartGameFlow();
+        if (once)
+        {
+            Debug.Log("ONCE");
+            StartCoroutine(nameof(AptendDelay));
+        }
+    }
+
+    public IEnumerator AptendDelay()
+    {
+        once = false;
+        yield return new WaitForSeconds(StartDelay);
+        // attendo la scadenza di un timer e
+        // poi lancio un evento di scelta e avvio di un client
+        clientManager.ActiveClient(true);
+        clientManager.CountClient();
+
+        Debug.Log("ONCE COROUTINE");
     }
 
     public void RestartGameFlow()
     {
-        float currentTime = Time.time;
-        if (currentTime >= lastTime + StartDelay)
-        {
-
-            // attendo la scadenza di un timer e
-            // poi lancio un evento di scelta e avvio di un client
-            clientManager.ActiveClient(true);
-            clientManager.CountClient();
-
-
-
-
-
-
-            lastTime = currentTime;
-        }
+        once = true;
     }
 
 

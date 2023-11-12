@@ -3458,6 +3458,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6003234634793896251, guid: bc6df5dc8617b9c448b18769dc61a03e,
+        type: 3}
+      propertyPath: gameFlowManager
+      value: 
+      objectReference: {fileID: 1380338879}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4391,6 +4396,206 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1357543694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 410429070160307219, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: HowManyFoodDrop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 459444812687066565, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: HowManyFoodDrop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 490530280540423677, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: HowManyFoodDrop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: rageManger
+      value: 
+      objectReference: {fileID: 1488347962}
+    - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 2019265323}
+    - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: vendingMachine
+      value: 
+      objectReference: {fileID: 261307243}
+    - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: ChangeClient.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: ChangeClient.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: ChangeClient.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1380338879}
+    - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: ChangeClient.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: ChangeClient.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGameFlow
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: ChangeClient.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameFlowManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: ChangeClient.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157173728875764335, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Clients
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820821795539191504, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 630.6516
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820821795539191504, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 341.56396
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820821795539191504, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.9266357
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820821795539191504, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820821795539191504, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820821795539191504, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820821795539191504, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820821795539191504, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820821795539191504, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820821795539191504, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058465820276914264, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: HowManyFoodDrop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301266340463911806, guid: 8d06ceefb975f2144a1586797f4c93c7,
+        type: 3}
+      propertyPath: HowManyFoodDrop
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d06ceefb975f2144a1586797f4c93c7, type: 3}
+--- !u!114 &1357543695 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1357543694}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69899c7b48005134eabf9d5221885784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1380338878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1380338880}
+  - component: {fileID: 1380338879}
+  m_Layer: 0
+  m_Name: GameFlowManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1380338879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380338878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1a8cf67c717fb44916c6feb49cfe48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clientManager: {fileID: 1357543695}
+--- !u!4 &1380338880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380338878}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1382687595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 747104330393498556, guid: bc6df5dc8617b9c448b18769dc61a03e,
@@ -4860,6 +5065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652323552}
   - component: {fileID: 1652323551}
+  - component: {fileID: 1652323553}
   m_Layer: 0
   m_Name: DeathZone
   m_TagString: DeathZone
@@ -4897,12 +5103,26 @@ Transform:
   m_GameObject: {fileID: 1652323550}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.88, z: 0}
+  m_LocalPosition: {x: 0, y: 5.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 966759997}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1652323553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652323550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f940a469d4e6f42ac0c38a9fc56e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rageBarManager: {fileID: 1488347962}
+  gameFlowManager: {fileID: 1380338879}
 --- !u!1 &1671106803
 GameObject:
   m_ObjectHideFlags: 0
@@ -7832,6 +8052,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2107261749}
   m_LocalEulerAnglesHint: {x: 89.354, y: 0, z: 0}
+--- !u!114 &2019265323 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6003234634793896251, guid: bc6df5dc8617b9c448b18769dc61a03e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1051953371}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9500f5d4a44808f428dbff45e8f07db5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2069021205
 GameObject:
   m_ObjectHideFlags: 0
@@ -8378,3 +8610,5 @@ SceneRoots:
   - {fileID: 530399408}
   - {fileID: 85215330}
   - {fileID: 1982185713}
+  - {fileID: 1357543694}
+  - {fileID: 1380338880}

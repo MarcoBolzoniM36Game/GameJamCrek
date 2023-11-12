@@ -13,7 +13,11 @@ public class FoodBehaviour : MonoBehaviour
     {
         if (other.CompareTag("DeathZone"))
         {
-
+            DeathZoneBehavior dzb = other.gameObject.GetComponent<DeathZoneBehavior>();
+            if (dzb != null)
+            {
+                dzb.ClientSatisfied();
+            }
             Destroy(gameObject);
             CameraShake.Invoke();
 
@@ -22,8 +26,14 @@ public class FoodBehaviour : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
+                PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
+                if (pm != null)
+                {
+                    pm.RestartGameFlow();
+                }
                 Destroy(gameObject);
                 Instantiate(vfxPrefab, transform.position, Quaternion.identity);
+
                 //if (vfxPrefab != null)
                 //{
                    

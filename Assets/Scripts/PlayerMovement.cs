@@ -76,6 +76,13 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    [SerializeField]
+    private GameFlowManager gameFlowManager;
+    public void RestartGameFlow()
+    {
+        gameFlowManager.RestartGameFlow();
+    }
+
     public void Jump(InputAction.CallbackContext context)
     {
         

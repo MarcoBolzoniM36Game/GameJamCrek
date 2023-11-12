@@ -73,8 +73,13 @@ MonoBehaviour:
   - {fileID: 1871309551912869822}
   - {fileID: 1825869010608807814}
   currentClient: {fileID: 0}
+  currentFoodCatch: 0
   vendingMachine: {fileID: 0}
   playerMovement: {fileID: 0}
+  rageManger: {fileID: 0}
+  ChangeClient:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &725854816579330966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -143,6 +148,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Client (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7403557547306752659, guid: a6cc9a941fd27cc46be304a28d684e82,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}
       propertyPath: Name
@@ -151,7 +161,7 @@ PrefabInstance:
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}
       propertyPath: rageAmount
-      value: 2
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}
@@ -243,10 +253,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Client
       objectReference: {fileID: 0}
+    - target: {fileID: 7403557547306752659, guid: a6cc9a941fd27cc46be304a28d684e82,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}
       propertyPath: Name
       value: MARCO
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
+        type: 3}
+      propertyPath: rageAmount
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}
@@ -338,6 +358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Client (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7403557547306752659, guid: a6cc9a941fd27cc46be304a28d684e82,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}
       propertyPath: Name
@@ -346,7 +371,7 @@ PrefabInstance:
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}
       propertyPath: rageAmount
-      value: 3
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}
@@ -448,10 +473,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Client (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7403557547306752659, guid: a6cc9a941fd27cc46be304a28d684e82,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}
       propertyPath: Name
       value: INDECISEU
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
+        type: 3}
+      propertyPath: rageAmount
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}
@@ -568,10 +603,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Client (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7403557547306752659, guid: a6cc9a941fd27cc46be304a28d684e82,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}
       propertyPath: Name
       value: TECNICO
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
+        type: 3}
+      propertyPath: rageAmount
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 8729881381539512552, guid: a6cc9a941fd27cc46be304a28d684e82,
         type: 3}

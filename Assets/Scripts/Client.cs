@@ -10,7 +10,7 @@ public class Client : MonoBehaviour
 
     public bool canProvideLife = false;
 
-    public float rageAmount = 1f;
+    public int rageAmount = 400;
 
     public bool canActiveDash = false;
 
