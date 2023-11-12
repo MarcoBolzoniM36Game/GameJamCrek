@@ -106,7 +106,6 @@ public class PlayerHealth : MonoBehaviour
         //StartCoroutine(nameof(RespawnCoroutine));
         transform.position = spawnPoint.position;
        
-        Invoke(RespawnPlayer, delayTime);
     }
 
     //IEnumerator RespawnCoroutine()
@@ -119,9 +118,6 @@ public class PlayerHealth : MonoBehaviour
 
     //}
 
-    private void Invoke(Action respawnPlayer, float delayTime)
-    {
-        throw new NotImplementedException();
-    }
+   
 }
 
