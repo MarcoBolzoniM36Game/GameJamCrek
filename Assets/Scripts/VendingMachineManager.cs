@@ -71,8 +71,12 @@ public class VendingMachineManager : MonoBehaviour
         }
     }
 
+    
+
     private void Update()
     {
+
+
         if (Input.GetKeyDown(KeyCode.O))
         {
             SelectFood(3);
