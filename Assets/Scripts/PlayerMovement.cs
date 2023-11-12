@@ -9,8 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     private bool isFacingRight = true;
     private float horizontal;
-    private float speed = 8f;
-    private float jumpPower = 16f;
+    private float speed = 5f;
+    private float jumpPower = 10f;
     private CapsuleCollider myCollider;
     
    
@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Dash Variables")]
     private bool canDash = true;
     private bool isDashing;
-    private float dashPower=14f;
+    private float dashPower=15f;
     private float dashTime=0.2f;
     private float dashCooldown=2f;
     [SerializeField]private bool isPowerUp=false;

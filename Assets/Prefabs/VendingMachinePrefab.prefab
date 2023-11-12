@@ -62,16 +62,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: cdea2d860adbaa24782e5d78903b064c, type: 2}
+      objectReference: {fileID: -876546973899608171, guid: ff4c8560386d95b48845ed8cc1a481fb,
+        type: 3}
     - target: {fileID: -3309029342212980235, guid: cf46d66bbc030ba4f97830c7ee1e106b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: cdea2d860adbaa24782e5d78903b064c, type: 2}
+      objectReference: {fileID: -876546973899608171, guid: ff4c8560386d95b48845ed8cc1a481fb,
+        type: 3}
     - target: {fileID: 919132149155446097, guid: cf46d66bbc030ba4f97830c7ee1e106b,
         type: 3}
       propertyPath: m_Name
-      value: VendingMachine
+      value: VendingMachinePrefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
