@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 public class SingleSlotManager : MonoBehaviour
@@ -19,6 +20,7 @@ public class SingleSlotManager : MonoBehaviour
     public List<GameObject> SlotProducts = new List<GameObject>();
 
     public GameObject SlotLight;
+    public Material myMaterial;
 
     private Transform startSpiralRotation;
     private Transform startProductsPosition;
@@ -35,8 +37,9 @@ public class SingleSlotManager : MonoBehaviour
     {
         if (SlotLight != null)
         {
-            //Debug.Log("Illumino slot ");
-            PlatLight.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.white);
+            myMaterial.SetFloat("_FrePower", 0);
+            Debug.Log("Illumino slot ");
+            //PlatLight.GetComponent<MeshRenderer>().material.SetFloat("_FrePower", 0);
             //SlotLight.Enable();
         }
     }
@@ -45,8 +48,9 @@ public class SingleSlotManager : MonoBehaviour
     {
         if (SlotLight != null)
         {
+            myMaterial.SetFloat("_FrePower", 5);
             //Debug.Log("Deillumino slot ");
-            PlatLight.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.black);
+            //PlatLight.GetComponent<MeshRenderer>().material.SetFloat("_FrePower", 5);
             //SlotLight.Enable();
         }
     }
