@@ -23,10 +23,10 @@ public class ClientManager : MonoBehaviour
 
     //}
 
-    
+
     //void Update()
     //{
-        
+
     //    if (Input.GetKeyDown(KeyCode.K))
     //    {
     //        ActiveClient(false);
@@ -35,7 +35,7 @@ public class ClientManager : MonoBehaviour
     //    //{
     //    //    ActiveClient(true);
     //    //}
-        
+
     //    //CountClient();
     //}
 
@@ -88,11 +88,13 @@ public class ClientManager : MonoBehaviour
         }
         else if (rageManger.currentRage >= 1600)
         {
+            Debug.Log("MILLEMILAAA!!");
             ActiveClient(false);
             ChangeClient?.Invoke();
         }
         else if (rageManger.currentRage <= 0)
         {
+            Debug.Log("ZEROOO!!");
             score.AddScore(-2 * i);
             // tolgo una vita al player
             ActiveClient(false);
