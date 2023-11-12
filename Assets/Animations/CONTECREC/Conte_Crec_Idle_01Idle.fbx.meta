@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: d9777605c2f9ea44eadfcc876788b705
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Idle' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'Conte_Crecs_Wip_22_Pelvis_JNT' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'Conte_Crecs_Wip_22_Spine_02_JNT'
+      has translation animation that will be discarded.\n\t'Conte_Crecs_Wip_22_Hair_JNT'
+      has translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 1
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      internalID: -3100369314251171874
+      firstFrame: 0
+      lastFrame: 64
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Conte_Crecs_Wip_22_JOINTS_GRP
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Hip_IK_JNT
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Hip_IK_JNT
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Knee_IK_JNT
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Knee_IK_JNT
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Anckle_IK_JNT
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Anckle_IK_JNT
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_Spine_01_JNT
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_Spine_02_JNT
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_Head_JNT
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Shoulder_SKIN_JNT
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Shoulder_SKIN_JNT
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Elbow_SKIN_JNT
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Elbow_SKIN_JNT
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_wrist_SKIN_JNT
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_wrist_SKIN_JNT
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Foot_IK_JNT
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Foot_IK_JNT
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_Hair_JNT
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Thumb_Base_JNT
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Thumb_Mid_JNT
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Thumb_Tip_JNT
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Index_Base_JNT
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Index_Tip_JNT
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Middle_Base_JNT
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Middle_Tip_JNT
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Pinky_Base_JNT
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_L_Pinky_Tip_JNT
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Thumb_Base_JNT
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Thumb_Mid_JNT
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Thumb_Tip_JNT
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Index_Base_JNT
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Index_Tip_JNT
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Middle_Base_JNT
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Middle_Tip_JNT
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Pinky_Base_JNT
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_R_Pinky_Tip_JNT
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Conte_Crecs_Wip_22_Neck_JNT
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Conte_Crec_Idle_01Idle(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_MESH_GRP
+      parentName: Conte_Crec_Idle_01Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_BODY_RIG
+      parentName: Conte_Crecs_Wip_22_MESH_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_JOINTS_GRP
+      parentName: Conte_Crec_Idle_01Idle(Clone)
+      position: {x: 0.05677948, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_Pelvis_JNT
+      parentName: Conte_Crecs_Wip_22_JOINTS_GRP
+      position: {x: -0.056779448, y: 0.78201765, z: -0.025232445}
+      rotation: {x: -1.0479925e-11, y: -1.0479925e-11, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: Conte_Crecs_Wip_22_Spine_01_JNT
+      parentName: Conte_Crecs_Wip_22_Pelvis_JNT
+      position: {x: -0.15434921, y: -1.11022296e-17, z: 0}
+      rotation: {x: -9.020561e-17, y: -0.0000000046417923, z: -3.4507487e-20, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Conte_Crecs_Wip_22_Spine_02_JNT
+      parentName: Conte_Crecs_Wip_22_Spine_01_JNT
+      position: {x: -0.15434921, y: -1.9428901e-17, z: -1.11022296e-17}
+      rotation: {x: -0.0000000023283062, y: 0.0000000046566133, z: 1.0859274e-17,
+        w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Conte_Crecs_Wip_22_Neck_JNT
+      parentName: Conte_Crecs_Wip_22_Spine_02_JNT
+      position: {x: -0.15434921, y: -1.6653344e-17, z: -6.661338e-17}
+      rotation: {x: -1.1102229e-16, y: 0.0000000023283062, z: 5.421011e-18, w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Shoulder_IK_JNT
+      parentName: Conte_Crecs_Wip_22_Neck_JNT
+      position: {x: -0.053841956, y: -0.36779484, z: -0.00031525406}
+      rotation: {x: 0.16865556, y: -0.18383381, z: 0.5751689, w: 0.77906436}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Elbow_IK_JNT
+      parentName: Conte_Crecs_Wip_22_L_Shoulder_IK_JNT
+      position: {x: -0.3091894, y: -1.065814e-15, z: 1.1990408e-15}
+      rotation: {x: -7.441017e-16, y: 0.41880506, z: -6.055347e-16, w: 0.9080762}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_L_wrist_IK_JNT
+      parentName: Conte_Crecs_Wip_22_L_Elbow_IK_JNT
+      position: {x: -0.4338644, y: -1.4210854e-15, z: 2.3980816e-15}
+      rotation: {x: -0.06167582, y: -0.19358338, z: 0.04806164, w: 0.97796303}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Shoulder_FK_JNT
+      parentName: Conte_Crecs_Wip_22_Neck_JNT
+      position: {x: -0.053841956, y: -0.36779484, z: -0.00031525406}
+      rotation: {x: 0.4987171, y: 0.53876567, z: 0.4221835, w: 0.5317649}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Elbow_FK_JNT
+      parentName: Conte_Crecs_Wip_22_L_Shoulder_FK_JNT
+      position: {x: -0.3091894, y: -1.065814e-15, z: 1.1990408e-15}
+      rotation: {x: 8.3427445e-17, y: 0.87075317, z: -8.3427445e-17, w: 0.49172038}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_L_wrist_FK_JNT
+      parentName: Conte_Crecs_Wip_22_L_Elbow_FK_JNT
+      position: {x: -0.4338644, y: -1.4210854e-15, z: 2.3980816e-15}
+      rotation: {x: 0.38844135, y: -0.0757414, z: 0.5937658, w: 0.70058465}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_R_Shoulder_FK_JNT
+      parentName: Conte_Crecs_Wip_22_Neck_JNT
+      position: {x: -0.053842332, y: 0.36779398, z: -0.00031525397}
+      rotation: {x: -0.060505476, y: 0.99421823, z: -0.024452245, w: -0.08527198}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_R_Elbow_FK_JNT
+      parentName: Conte_Crecs_Wip_22_R_Shoulder_FK_JNT
+      position: {x: -0.30918965, y: -2.664535e-15, z: 1.0436096e-15}
+      rotation: {x: -6.855531e-17, y: -0.14023824, z: -6.1448376e-16, w: 0.9901178}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_R_wrist_FK_JNT
+      parentName: Conte_Crecs_Wip_22_R_Elbow_FK_JNT
+      position: {x: -0.4338641, y: 5.1514346e-15, z: 8.8817837e-17}
+      rotation: {x: 0, y: 0, z: 0.101382494, w: 0.99484754}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_R_Shoulder_IK_JNT
+      parentName: Conte_Crecs_Wip_22_Neck_JNT
+      position: {x: -0.053842332, y: 0.36779398, z: -0.00031525397}
+      rotation: {x: -0.61649424, y: 0.78100175, z: 0.012987021, w: 0.0990074}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_R_Elbow_IK_JNT
+      parentName: Conte_Crecs_Wip_22_R_Shoulder_IK_JNT
+      position: {x: -0.30918965, y: -3.3750777e-15, z: 8.8817837e-16}
+      rotation: {x: -3.1230282e-16, y: -0.000009265663, z: 1.4431422e-14, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_R_wrist_IK_JNT
+      parentName: Conte_Crecs_Wip_22_R_Elbow_IK_JNT
+      position: {x: -0.4338641, y: 7.815969e-15, z: -2.8865798e-16}
+      rotation: {x: -0.028155632, y: 0.035799265, z: -0.030286895, w: 0.9985031}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_Head_JNT
+      parentName: Conte_Crecs_Wip_22_Neck_JNT
+      position: {x: -0.16362827, y: 0, z: 0}
+      rotation: {x: -0, y: -0, z: 5.169879e-25, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_Head_NULL
+      parentName: Conte_Crecs_Wip_22_Head_JNT
+      position: {x: -0.231317, y: -9.669905e-18, z: -2.8328163e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_Hair_JNT
+      parentName: Conte_Crecs_Wip_22_Head_JNT
+      position: {x: -0.21159175, y: -4.4408918e-17, z: -0.031650197}
+      rotation: {x: -0.0000000016463613, y: -0.0000000016463614, z: 0.7071068, w: 0.7071068}
+      scale: {x: 0.9999997, y: 0.9999997, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Shoulder_SKIN_JNT
+      parentName: Conte_Crecs_Wip_22_Neck_JNT
+      position: {x: -0.053841956, y: -0.36779484, z: -0.00031525406}
+      rotation: {x: -0.032280095, y: -0.04908611, z: 0.7072625, w: 0.7045058}
+      scale: {x: 0.9999996, y: 0.99999946, z: 1.0000001}
+    - name: Conte_Crecs_Wip_22_L_Elbow_SKIN_JNT
+      parentName: Conte_Crecs_Wip_22_L_Shoulder_SKIN_JNT
+      position: {x: -0.3091894, y: -1.065814e-15, z: 1.1990408e-15}
+      rotation: {x: -0.0000000074505797, y: 0.02869793, z: 8.1490714e-10, w: 0.99958813}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: Conte_Crecs_Wip_22_L_wrist_SKIN_JNT
+      parentName: Conte_Crecs_Wip_22_L_Elbow_SKIN_JNT
+      position: {x: -0.4338644, y: -1.4210854e-15, z: 2.3980816e-15}
+      rotation: {x: 0.0000000051412967, y: 0.000000013038514, z: 0.000000015637221,
+        w: 1}
+      scale: {x: 1.0000001, y: 1.0000007, z: 1.0000006}
+    - name: Conte_Crecs_Wip_22_L_Index_Base_JNT
+      parentName: Conte_Crecs_Wip_22_L_wrist_SKIN_JNT
+      position: {x: -0.15674986, y: 0.002358577, z: 0.07153114}
+      rotation: {x: 0.75975704, y: 0.048869476, z: -0.047622267, w: 0.64661664}
+      scale: {x: 1.0000001, y: 0.9999997, z: 0.99999934}
+    - name: Conte_Crecs_Wip_22_L_Index_Tip_JNT
+      parentName: Conte_Crecs_Wip_22_L_Index_Base_JNT
+      position: {x: -0.0925609, y: 6.2172483e-16, z: 0}
+      rotation: {x: -0, y: 0.000000022351736, z: 0.011713673, w: 0.9999314}
+      scale: {x: 1, y: 0.99999994, z: 1.0000004}
+    - name: Conte_Crecs_Wip_22_L_Index_NULL
+      parentName: Conte_Crecs_Wip_22_L_Index_Tip_JNT
+      position: {x: -0.0815781, y: -1.065814e-15, z: 7.105427e-16}
+      rotation: {x: 8.783106e-18, y: 1.2434498e-15, z: -3.280362e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Middle_Base_JNT
+      parentName: Conte_Crecs_Wip_22_L_wrist_SKIN_JNT
+      position: {x: -0.16987251, y: 0.009088991, z: -0.0012125674}
+      rotation: {x: 0.7465477, y: -0.012488716, z: 0.01117555, w: 0.66512084}
+      scale: {x: 1.0000004, y: 0.9999996, z: 0.99999934}
+    - name: Conte_Crecs_Wip_22_L_Middle_Tip_JNT
+      parentName: Conte_Crecs_Wip_22_L_Middle_Base_JNT
+      position: {x: -0.08782137, y: -1.8041123e-17, z: 0}
+      rotation: {x: -0, y: 0.012346003, z: 0.000000047963105, w: 0.99992377}
+      scale: {x: 0.9999997, y: 1.0000001, z: 1.0000005}
+    - name: Conte_Crecs_Wip_22_L_Middle_NULL
+      parentName: Conte_Crecs_Wip_22_L_Middle_Tip_JNT
+      position: {x: -0.093691714, y: 1.3877787e-18, z: -5.32907e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Pinky_Base_JNT
+      parentName: Conte_Crecs_Wip_22_L_wrist_SKIN_JNT
+      position: {x: -0.151222, y: 0.01755285, z: -0.08033672}
+      rotation: {x: 0.75430685, y: -0.059053507, z: 0.05624232, w: 0.6514374}
+      scale: {x: 1.0000002, y: 1, z: 0.9999996}
+    - name: Conte_Crecs_Wip_22_L_Pinky_Tip_JNT
+      parentName: Conte_Crecs_Wip_22_L_Pinky_Base_JNT
+      position: {x: -0.0861407, y: -3.9968028e-16, z: -1.5987211e-15}
+      rotation: {x: -0.000000029802315, y: 0.04116678, z: 0.00000013783571, w: 0.99915236}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000004}
+    - name: Conte_Crecs_Wip_22_L_Pinky_NULL
+      parentName: Conte_Crecs_Wip_22_L_Pinky_Tip_JNT
+      position: {x: -0.08646218, y: -5.7731595e-16, z: -6.2172485e-15}
+      rotation: {x: 9.683958e-17, y: 3.6776138e-16, z: 1.6486812e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Thumb_Base_JNT
+      parentName: Conte_Crecs_Wip_22_L_wrist_SKIN_JNT
+      position: {x: -0.046967275, y: -0.015582432, z: 0.07811474}
+      rotation: {x: 0.8764023, y: 0.15834956, z: -0.3996164, w: 0.21714321}
+      scale: {x: 1, y: 0.9999998, z: 1.0000005}
+    - name: Conte_Crecs_Wip_22_L_Thumb_Mid_JNT
+      parentName: Conte_Crecs_Wip_22_L_Thumb_Base_JNT
+      position: {x: -0.05413044, y: 1.7763567e-16, z: -3.330669e-17}
+      rotation: {x: 0.000000044703484, y: 0.038638983, z: 0.000000059604645, w: 0.99925333}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Thumb_Tip_JNT
+      parentName: Conte_Crecs_Wip_22_L_Thumb_Mid_JNT
+      position: {x: -0.054230444, y: 1.2434497e-15, z: -7.105427e-16}
+      rotation: {x: -0.000000028628534, y: -0.000000026077029, z: -0.000000030931595,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.9999998}
+    - name: Conte_Crecs_Wip_22_L_Thumb_NULL
+      parentName: Conte_Crecs_Wip_22_L_Thumb_Tip_JNT
+      position: {x: -0.054140404, y: 1.9539924e-15, z: 1.2878586e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_Monocolo_JNT
+      parentName: Conte_Crecs_Wip_22_Neck_JNT
+      position: {x: -0.2459992, y: 0.21181092, z: 0.107634395}
+      rotation: {x: -0.0000000016463613, y: -0.0000000016463614, z: 0.7071068, w: 0.7071068}
+      scale: {x: 0.9999997, y: 0.9999997, z: 1}
+    - name: Conte_Crecs_Wip_22_R_Shoulder_SKIN_JNT
+      parentName: Conte_Crecs_Wip_22_Neck_JNT
+      position: {x: -0.053842332, y: 0.36779398, z: -0.00031525397}
+      rotation: {x: -0.70450604, y: 0.70726264, z: -0.049082197, w: 0.032276247}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000004}
+    - name: Conte_Crecs_Wip_22_R_Elbow_SKIN_JNT
+      parentName: Conte_Crecs_Wip_22_R_Shoulder_SKIN_JNT
+      position: {x: -0.30918965, y: -2.664535e-15, z: 1.0436096e-15}
+      rotation: {x: 1.8189894e-10, y: -0.028697908, z: -0.000000017695129, w: 0.9995882}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+    - name: Conte_Crecs_Wip_22_R_wrist_SKIN_JNT
+      parentName: Conte_Crecs_Wip_22_R_Elbow_SKIN_JNT
+      position: {x: -0.4338641, y: 5.1514346e-15, z: 8.8817837e-17}
+      rotation: {x: 0.000000008931463, y: -0.000000007450579, z: -0.000000071997796,
+        w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: Conte_Crecs_Wip_22_R_Index_Base_JNT
+      parentName: Conte_Crecs_Wip_22_R_wrist_SKIN_JNT
+      position: {x: -0.15675054, y: 0.0023593432, z: -0.071531005}
+      rotation: {x: -0.7599858, y: -0.048853684, z: -0.04763814, w: 0.6463478}
+      scale: {x: 0.99999946, y: 0.99999994, z: 1.0000005}
+    - name: Conte_Crecs_Wip_22_R_Index_Tip_JNT
+      parentName: Conte_Crecs_Wip_22_R_Index_Base_JNT
+      position: {x: -0.09256192, y: 1.4210854e-15, z: 0}
+      rotation: {x: 0.000000029802319, y: 0.0000000074505797, z: 0.011710397, w: 0.99993145}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1}
+    - name: Conte_Crecs_Wip_22_R_Index_NULL
+      parentName: Conte_Crecs_Wip_22_R_Index_Tip_JNT
+      position: {x: -0.0815767, y: -1.1102229e-15, z: 5.32907e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_R_Middle_Base_JNT
+      parentName: Conte_Crecs_Wip_22_R_wrist_SKIN_JNT
+      position: {x: -0.16987406, y: 0.009088515, z: 0.0012127794}
+      rotation: {x: -0.7465441, y: 0.012492306, z: 0.01117156, w: 0.6651249}
+      scale: {x: 0.9999996, y: 0.9999998, z: 1.0000004}
+    - name: Conte_Crecs_Wip_22_R_Middle_Tip_JNT
+      parentName: Conte_Crecs_Wip_22_R_Middle_Base_JNT
+      position: {x: -0.08782007, y: 8.326672e-18, z: 3.3750777e-15}
+      rotation: {x: 0.000000029802322, y: -0.012357703, z: 0.0000000048894435, w: 0.9999237}
+      scale: {x: 1.0000005, y: 1.0000004, z: 0.99999994}
+    - name: Conte_Crecs_Wip_22_R_Middle_NULL
+      parentName: Conte_Crecs_Wip_22_R_Middle_Tip_JNT
+      position: {x: -0.09369173, y: 5.5511148e-18, z: -8.171241e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_R_Pinky_Base_JNT
+      parentName: Conte_Crecs_Wip_22_R_wrist_SKIN_JNT
+      position: {x: -0.15122393, y: 0.017550942, z: 0.08033716}
+      rotation: {x: -0.7543077, y: 0.059057, z: 0.05624207, w: 0.65143615}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000005}
+    - name: Conte_Crecs_Wip_22_R_Pinky_Tip_JNT
+      parentName: Conte_Crecs_Wip_22_R_Pinky_Base_JNT
+      position: {x: -0.08614044, y: -4.4408918e-16, z: -2.131628e-15}
+      rotation: {x: -0.000000029802315, y: -0.04116473, z: 0.00000002793967, w: 0.9991524}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999997}
+    - name: Conte_Crecs_Wip_22_R_Pinky_NULL
+      parentName: Conte_Crecs_Wip_22_R_Pinky_Tip_JNT
+      position: {x: -0.08646205, y: 4.4408918e-17, z: -1.9539924e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_R_Thumb_Base_JNT
+      parentName: Conte_Crecs_Wip_22_R_wrist_SKIN_JNT
+      position: {x: -0.046968278, y: -0.015581453, z: -0.07811498}
+      rotation: {x: 0.21713829, y: -0.39961192, z: 0.15834543, w: 0.87640625}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Conte_Crecs_Wip_22_R_Thumb_Mid_JNT
+      parentName: Conte_Crecs_Wip_22_R_Thumb_Base_JNT
+      position: {x: -0.054130826, y: 1.7763567e-16, z: 3.330669e-17}
+      rotation: {x: -0.000000014901161, y: 0.03862378, z: -0.000000022351742, w: 0.99925387}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000007}
+    - name: Conte_Crecs_Wip_22_R_Thumb_Tip_JNT
+      parentName: Conte_Crecs_Wip_22_R_Thumb_Mid_JNT
+      position: {x: -0.0542301, y: 1.065814e-15, z: -1.3100631e-15}
+      rotation: {x: 0.0000000455332, y: 0.000010438263, z: -0.000000020608303, w: 1}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999946}
+    - name: Conte_Crecs_Wip_22_R_Thumb_NULL
+      parentName: Conte_Crecs_Wip_22_R_Thumb_Tip_JNT
+      position: {x: -0.05414065, y: 1.9539924e-15, z: -4.884981e-16}
+      rotation: {x: 6.123231e-17, y: 1, z: -6.123231e-17, w: -0.0000005326322}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_R_Hip_IK_JNT
+      parentName: Conte_Crecs_Wip_22_Pelvis_JNT
+      position: {x: 0.032304, y: 0.17577258, z: -0.0021487998}
+      rotation: {x: -0.0015812218, y: 0.962206, z: -0.27217615, w: 0.008796245}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: Conte_Crecs_Wip_22_R_Knee_IK_JNT
+      parentName: Conte_Crecs_Wip_22_R_Hip_IK_JNT
+      position: {x: -0.25280637, y: -2.2204459e-17, z: -1.5543121e-16}
+      rotation: {x: -0.0000000785294, y: 0.011725911, z: 0.000000029685904, w: 0.99993134}
+      scale: {x: 1.0000006, y: 1.0000004, z: 1.0000008}
+    - name: Conte_Crecs_Wip_22_R_Anckle_IK_JNT
+      parentName: Conte_Crecs_Wip_22_R_Knee_IK_JNT
+      position: {x: -0.4012872, y: 1.3322676e-16, z: 3.6637357e-16}
+      rotation: {x: -0.07679262, y: -0.488145, z: 0.042614885, w: 0.8683325}
+      scale: {x: 0.99999994, y: 0.99999976, z: 0.99999994}
+    - name: Conte_Crecs_Wip_22_R_Foot_IK_JNT
+      parentName: Conte_Crecs_Wip_22_R_Anckle_IK_JNT
+      position: {x: -0.13812779, y: -1.3322676e-16, z: 1.6653344e-15}
+      rotation: {x: -0.000000013634686, y: 0.28708804, z: -0.000000032161523, w: -0.9579042}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.99999994}
+    - name: Conte_Crecs_Wip_22_R_Toe_IK_NULL
+      parentName: Conte_Crecs_Wip_22_R_Foot_IK_JNT
+      position: {x: -0.076693416, y: 6.6613376e-16, z: 2.7755574e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Hip_IK_JNT
+      parentName: Conte_Crecs_Wip_22_Pelvis_JNT
+      position: {x: 0.032303106, y: -0.17577265, z: -0.002148793}
+      rotation: {x: 0.00158146, y: 0.96220684, z: 0.2721732, w: 0.008795946}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Knee_IK_JNT
+      parentName: Conte_Crecs_Wip_22_L_Hip_IK_JNT
+      position: {x: -0.25280678, y: 3.5527135e-16, z: 1.7763567e-16}
+      rotation: {x: -0.000000006062691, y: 0.011725618, z: 0.00000003795139, w: 0.99993134}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Anckle_IK_JNT
+      parentName: Conte_Crecs_Wip_22_L_Knee_IK_JNT
+      position: {x: -0.40128776, y: -3.774758e-16, z: -7.216449e-16}
+      rotation: {x: 0.076790385, y: -0.48814586, z: -0.042613868, w: 0.8683323}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000004}
+    - name: Conte_Crecs_Wip_22_L_Foot_IK_JNT
+      parentName: Conte_Crecs_Wip_22_L_Anckle_IK_JNT
+      position: {x: -0.1381279, y: -3.9968028e-16, z: 1.1102229e-15}
+      rotation: {x: -0.000000025132573, y: -0.28708678, z: 0.000000038899874, w: 0.9579046}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.99999994}
+    - name: Conte_Crecs_Wip_22_L_Toe_IK_NULL
+      parentName: Conte_Crecs_Wip_22_L_Foot_IK_JNT
+      position: {x: -0.07669284, y: 2.2204459e-16, z: -8.326672e-17}
+      rotation: {x: -4.4086944e-18, y: -2.4980015e-16, z: 2.7755578e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Conte_Crecs_Wip_22_R_Eyebrow_JNT
+      parentName: Conte_Crecs_Wip_22_JOINTS_GRP
+      position: {x: 0.0678382, y: 1.5526719, z: 0.0045076343}
+      rotation: {x: -0.0000000014551919, y: 1, z: -3.252608e-17, w: -0.0000000023283069}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Conte_Crecs_Wip_22_L_Eyebrow_JNT
+      parentName: Conte_Crecs_Wip_22_JOINTS_GRP
+      position: {x: -0.2887786, y: 1.492969, z: 0.030235661}
+      rotation: {x: 0.0000000023283067, y: -2.2361671e-17, z: -0.000000009604262,
+        w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 20
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
