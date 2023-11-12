@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 5f;
     private float jumpPower = 10f;
     private CapsuleCollider myCollider;
+    //public Animator anim;
     
    
     [Header("Ground Check")]
@@ -38,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         Physics.gravity = new Vector3(0, -22, 0);
+        
     }
 
     private void Update()
@@ -73,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
            myCollider.enabled = true;
 
         }
-
+        //anim.Play("Walk");
     }
 
     [SerializeField]
@@ -143,6 +145,10 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         horizontal = context.ReadValue<Vector2>().x;
+        //if (context.performed)
+        //{
+        //    anim.Play("Move");
+        //}
     }
 
     private IEnumerator Dash()
