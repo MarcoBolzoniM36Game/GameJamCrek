@@ -909,17 +909,17 @@ MonoBehaviour:
   Slots: []
   SlotStartPoint: {fileID: 1455525720}
   productsPrefabs:
-  - {fileID: 7463141654279300762, guid: 4ebca1602a10f2e408ae4a8e03ae28b1, type: 3}
-  - {fileID: 9200742528827205725, guid: aa8e9202133ecbf4cac0c6b5018ba250, type: 3}
-  - {fileID: 7232715755205383292, guid: 706cad5486c892d4a918dea703b4a2ff, type: 3}
-  - {fileID: 3506504889364521290, guid: 4ac695204ae661f469b75078e5b98f36, type: 3}
-  - {fileID: 46943287800817567, guid: 404006503ec089b4781b1b8476e1d7b9, type: 3}
-  - {fileID: 7656610291656632695, guid: fccba683a5daef444be9b5174ef021f2, type: 3}
-  - {fileID: 3944394818661794308, guid: b32d154b7ee652442934f58816e6d22c, type: 3}
-  - {fileID: 8365111381205352552, guid: e2511720625dc0242a9525f1e08f07e1, type: 3}
-  - {fileID: 7033548095865734083, guid: bed457aa2a766bb40a89ede50291715c, type: 3}
-  - {fileID: 8490811332688936096, guid: 561fd8e9649463649bf59f0006bdeee9, type: 3}
-  - {fileID: 3125752432706721858, guid: 54b81596413be7248a06e3161810b984, type: 3}
+  - {fileID: 8693262078278698878, guid: 178a75791bcf2cf4594668aac7f522f3, type: 3}
+  - {fileID: 5661814457575526607, guid: d9a572ff93c41054eaf6496444dd142c, type: 3}
+  - {fileID: 4968385267583026834, guid: 3048a02b9ad0a7e478c1b75581cfbed9, type: 3}
+  - {fileID: 3944930722971535101, guid: 41af74e62365a194aa3c1e98a71a78e5, type: 3}
+  - {fileID: 2180188185981291809, guid: dd7fbb53007314d42971f59abfb3eb49, type: 3}
+  - {fileID: 1242276665994000405, guid: 3da2db858f11cd64b9b5ed57f56540d5, type: 3}
+  - {fileID: 4062014641021366100, guid: c3b62ecbef146dc458fef65240d766d4, type: 3}
+  - {fileID: 969497445563891402, guid: 773379b9ff412d1448f47d7598985e6e, type: 3}
+  - {fileID: 5153254615533431541, guid: ebbdee020721ecb4b970843d2ae5c33a, type: 3}
+  - {fileID: 6281090939378686781, guid: d800dfb45c40a1b42a64a3070864dd61, type: 3}
+  - {fileID: 4701382142115447162, guid: 2195926c90a20c440bad17533d0fa267, type: 3}
   audio: {fileID: 920223463}
 --- !u!4 &261307244
 Transform:
@@ -5234,12 +5234,12 @@ PrefabInstance:
     - target: {fileID: 466712309561046736, guid: 92f377e35888c57438fee38137d0bc92,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.209
+      value: 9.37
       objectReference: {fileID: 0}
     - target: {fileID: 466712309561046736, guid: 92f377e35888c57438fee38137d0bc92,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.881
+      value: -3.72
       objectReference: {fileID: 0}
     - target: {fileID: 466712309561046736, guid: 92f377e35888c57438fee38137d0bc92,
         type: 3}
@@ -5301,6 +5301,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ModelloPlayerIdle
       objectReference: {fileID: 0}
+    - target: {fileID: 8725538373515144895, guid: 92f377e35888c57438fee38137d0bc92,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f75823d5882ae84db7224d02ed36f2f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
