@@ -9,6 +9,7 @@ public class ClientManager : MonoBehaviour
     public int stati=5;
     public GameObject[] clientList;
     public GameObject currentClient;
+    public int currentFoodCatch = 0;
    
     public VendingMachineManager vendingMachine;
     public PlayerMovement playerMovement;
@@ -16,27 +17,27 @@ public class ClientManager : MonoBehaviour
 
     public UnityEvent ChangeClient = new UnityEvent();
 
-    void Start()
-    {
-        ActiveClient(true);
+    //void Start()
+    //{
+    //    //ActiveClient(true);
 
-    }
+    //}
 
     
-    void Update()
-    {
+    //void Update()
+    //{
         
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            ActiveClient(false);
-        }
-        //if (Input.GetKeyDown(KeyCode.J))
-        //{
-        //    ActiveClient(true);
-        //}
+    //    if (Input.GetKeyDown(KeyCode.K))
+    //    {
+    //        ActiveClient(false);
+    //    }
+    //    //if (Input.GetKeyDown(KeyCode.J))
+    //    //{
+    //    //    ActiveClient(true);
+    //    //}
         
-        //CountClient();
-    }
+    //    //CountClient();
+    //}
 
     public void ActiveClient(bool i) 
     {
@@ -47,10 +48,25 @@ public class ClientManager : MonoBehaviour
             GameObject g = clientList[n];
             g.SetActive(i);
             currentClient = g;
+            currentFoodCatch = 0;
+            Debug.Log("CLIENT: " + currentClient.name);
         }
         else
         {
             currentClient.SetActive(false);
+        }
+    }
+
+    public void FoodCatch()
+    {
+        currentFoodCatch++;
+        Client c = currentClient.GetComponent<Client>();
+        if (c != null)
+        {
+            if (currentFoodCatch == c.HowManyFoodDrop)
+            {
+                rageManger.Rage(c.rageAmount);
+            }
         }
     }
 
@@ -75,7 +91,7 @@ public class ClientManager : MonoBehaviour
             ActiveClient(false);
             ChangeClient?.Invoke();
         }
-        else if (rageManger.currentRage == 0)
+        else if (rageManger.currentRage <= 0)
         {
             score.AddScore(-2 * i);
             // tolgo una vita al player
