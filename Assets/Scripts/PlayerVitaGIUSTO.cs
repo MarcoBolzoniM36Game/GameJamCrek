@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.VFX;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerVitaGIUSTO : MonoBehaviour
 {
     public Sprite fullHealthSprite;
     public Sprite seventyFivePercentSprite;
@@ -17,16 +17,17 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth = 100;
     private SpriteRenderer spriteRenderer;
+    public Transform spawnPoint;
+    public VisualEffect respawn;
+    public float delayTime = 4f;
 
-
-
-
+  
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
 
 
-
+       
 
         if (currentHealth > 75)
         {
@@ -40,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().sprite = fiftyPercentSprite;
         }
-        else if (currentHealth > 0)
+        else if(currentHealth > 0)
         {
             GetComponent<SpriteRenderer>().sprite = twentyFivePercentSprite;
         }
@@ -64,7 +65,7 @@ public class PlayerHealth : MonoBehaviour
         {
             spriteRenderer.sprite = fiftyPercentSprite;
         }
-        else if (currentHealth > 0)
+        else if(currentHealth >0)
         {
             spriteRenderer.sprite = twentyFivePercentSprite;
         }
@@ -73,8 +74,50 @@ public class PlayerHealth : MonoBehaviour
             spriteRenderer.sprite = fivePercentSprite;
         }
     }
+    private void Update()
+    {
+        
+    
+    
+        if ( Input.GetKeyDown(KeyCode.Q) )
+        {
+            TakeDamage(20);
+            Debug.Log("Danno");
+    
+            
+        if ( currentHealth <= 0 )
+            {
+                Destroy(gameObject);
+                Respawn();
+            }
+        }
+    }
+    private void RespawnPlayer()
+    {
+      
+        Instantiate(gameObject, spawnPoint.position, spawnPoint.rotation);
+        transform.position = spawnPoint.position;
+        Debug.Log("DIOMER");
+    }
+    private void Respawn()
+    {
+        Instantiate(respawn, spawnPoint.position, spawnPoint.rotation);
+        //Instantiate(gameObject, spawnPoint.position, spawnPoint.rotation);
+        //StartCoroutine(nameof(RespawnCoroutine));
+        transform.position = spawnPoint.position;
+       
+    }
 
-}
+    //IEnumerator RespawnCoroutine()
+    //{
+    //    Instantiate(respawn, spawnPoint.position, spawnPoint.rotation);
+    //    Invoke( RespawnPlayer, delayTime);
+    //    //yi/*eld return new WaitForSeconds(4);*/
+    //    Debug.Log("HoAspettato4FottutiSecondi");
+    //    //Instantiate(gameObject, spawnPoint.position, spawnPoint.rotation);
+
+    //}
+
    
-
+}
 
