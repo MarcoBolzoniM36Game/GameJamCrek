@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    public Text scoreText;
+    public TMPro.TMP_Text scoreText;
     public  int scoreCount;
 
     private void Start()
@@ -26,7 +26,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = "Score: " + scoreCount;
+            scoreText.text = "£ "+scoreCount;
         }
     }
 }

@@ -50,7 +50,7 @@ Material:
     - _CastShadows: 1
     - _Cull: 2
     - _DstBlend: 10
-    - _FrePower: 8.27
+    - _FrePower: 5.25
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -61,7 +61,7 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 8.024682, g: 9.17469, b: 10.3105, a: 0}
+    - _Color: {r: 18.377792, g: 4.5222836, b: 2.9827826, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4261686780277978253
 MonoBehaviour:

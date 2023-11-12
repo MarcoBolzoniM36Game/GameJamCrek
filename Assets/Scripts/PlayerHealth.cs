@@ -77,24 +77,24 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void RespawnPlayer()
-    {
-        if (currentHealth == 0)
-        {
-            Respawn();
-            //Instantiate(gameObject, spawnPoint.position, spawnPoint.rotation);
-            //transform.position = spawnPoint.position;
-            //Debug.Log("DIOMER");
-        }
-    }
-    private void Respawn()
-    {
-        Instantiate(vfxRespawn, spawnPoint.position, spawnPoint.rotation);
-        //Instantiate(gameObject, spawnPoint.position, spawnPoint.rotation);
-        //StartCoroutine(nameof(RespawnCoroutine));
-        transform.position = spawnPoint.position;
+    //private void RespawnPlayer()
+    //{
+    //    if (currentHealth == 0)
+    //    {
+    //        Respawn();
+    //        //Instantiate(gameObject, spawnPoint.position, spawnPoint.rotation);
+    //        //transform.position = spawnPoint.position;
+    //        //Debug.Log("DIOMER");
+    //    }
+    //}
+    //private void Respawn()
+    //{
+    //    Instantiate(vfxRespawn, spawnPoint.position, spawnPoint.rotation);
+    //    //Instantiate(gameObject, spawnPoint.position, spawnPoint.rotation);
+    //    //StartCoroutine(nameof(RespawnCoroutine));
+    //    transform.position = spawnPoint.position;
 
-    }
+    //}
 
     //IEnumerator RespawnCoroutine()
     //{
