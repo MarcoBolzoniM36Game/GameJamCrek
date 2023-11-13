@@ -24,20 +24,20 @@ public class ClientManager : MonoBehaviour
     //}
 
 
-    //void Update()
-    //{
+    void Update()
+    {
+        //ChangeClientWithRage();
+        //    if (Input.GetKeyDown(KeyCode.K))
+        //    {
+        //        ActiveClient(false);
+        //    }
+        //    //if (Input.GetKeyDown(KeyCode.J))
+        //    //{
+        //    //    ActiveClient(true);
+        //    //}
 
-    //    if (Input.GetKeyDown(KeyCode.K))
-    //    {
-    //        ActiveClient(false);
-    //    }
-    //    //if (Input.GetKeyDown(KeyCode.J))
-    //    //{
-    //    //    ActiveClient(true);
-    //    //}
-
-    //    //CountClient();
-    //}
+        //    //CountClient();
+    }
 
     public void ActiveClient(bool i) 
     {
@@ -65,7 +65,7 @@ public class ClientManager : MonoBehaviour
         {
             if (currentFoodCatch == c.HowManyFoodDrop)
             {
-                rageManger.Rage(c.rageAmount);
+                rageManger.AddRage(c.rageAmount);
             }
         }
     }
@@ -89,16 +89,16 @@ public class ClientManager : MonoBehaviour
         else if (rageManger.currentRage >= 1600)
         {
             Debug.Log("MILLEMILAAA!!");
-            ActiveClient(false);
-            ChangeClient?.Invoke();
+            //ActiveClient(false);
+            //ChangeClient?.Invoke();
         }
         else if (rageManger.currentRage <= 0)
         {
-            Debug.Log("ZEROOO!!");
             score.AddScore(-2 * i);
+            //Debug.Log("ZEROOO!!");
             // tolgo una vita al player
-            ActiveClient(false);
-            ChangeClient?.Invoke();
+            //ActiveClient(false);
+            //ChangeClient?.Invoke();
         }
     }
 
@@ -115,6 +115,21 @@ public class ClientManager : MonoBehaviour
                 // aggiungere una vita al player
             }
             // TODO: se il nome verrà gestito in game con un TextMeshPRO, aggiornarlo
+        }
+    }
+
+    public void ChangeClientWithRage()
+    {
+        if (rageManger.currentRage >= 2000)
+        {
+            ActiveClient(false);
+            ChangeClient?.Invoke();
+        }
+
+        if (rageManger.currentRage >= 0)
+        {
+            ActiveClient(false);
+            ChangeClient?.Invoke();
         }
     }
 }

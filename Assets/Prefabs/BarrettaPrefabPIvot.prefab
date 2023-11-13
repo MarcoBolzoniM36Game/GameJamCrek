@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 490944425819075671}
   - component: {fileID: 6117508312467587047}
   - component: {fileID: 6925102486261713537}
-  - component: {fileID: 7716734143693935935}
   m_Layer: 0
   m_Name: BarrettaPrefabPIvot
-  m_TagString: Untagged
+  m_TagString: cazzo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,20 +82,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7716734143693935935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4062014641021366100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65110603264482c4f92d11a12806aafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vfxPrefab: {fileID: 1915669233600462698, guid: e1d7e69e9e7677540809824cef239cf3,
-    type: 3}
 --- !u!1 &7502764727024338844
 GameObject:
   m_ObjectHideFlags: 0

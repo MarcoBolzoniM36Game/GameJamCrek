@@ -69,6 +69,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BananPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a832e3033ded60449dbea3846ccc9ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: cazzo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81,10 +86,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8547979048795729166}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a832e3033ded60449dbea3846ccc9ba,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6941947997539547241}
   m_SourcePrefab: {fileID: 100100000, guid: 2a832e3033ded60449dbea3846ccc9ba, type: 3}
 --- !u!1 &3944394818661794308 stripped
 GameObject:
@@ -140,17 +141,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31863067, y: 0.9993979, z: 1.7320173}
   m_Center: {x: 0, y: 0.000000014901161, z: 0}
---- !u!114 &6941947997539547241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944394818661794308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65110603264482c4f92d11a12806aafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vfxPrefab: {fileID: 1915669233600462698, guid: e1d7e69e9e7677540809824cef239cf3,
-    type: 3}

@@ -38,7 +38,7 @@ public class VendingMachineManager : MonoBehaviour
     {
         SetupMachine(6, 6);
 
-        SpounPlayer();
+        SpawnPlayer();
     }
 
     /// <summary>
@@ -85,15 +85,15 @@ public class VendingMachineManager : MonoBehaviour
             if(ta != null)
             {
 
-                ta.pippo = AudioManager.Instance.GetComponent<TestAudio>();
+                //    ta.pippo = AudioManager.Instance.GetComponent<TestAudio>();
             }
         }
     }
 
-    public void SpounPlayer()
+    public void SpawnPlayer()
     {
         Instantiate(VFX, vfxSpawnPoint.position, vfxSpawnPoint.rotation);
-        Invoke("Spawn", 4f);
+        Invoke("Spawn", 4.5f);
         
     }
     private void Spawn()

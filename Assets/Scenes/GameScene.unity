@@ -4560,8 +4560,6 @@ MonoBehaviour:
   fivePercentSprite: {fileID: 21300000, guid: bd81815ecb82fb44ea63f0d8d6a100fe, type: 3}
   maxHealth: 100
   currentHealth: 100
-  spawnPoint: {fileID: 0}
-  vfxRespawn: {fileID: 0}
   playerPrefab: {fileID: 8979270496048427543}
 --- !u!212 &1338260758
 SpriteRenderer:
@@ -4631,17 +4629,17 @@ PrefabInstance:
     - target: {fileID: 410429070160307219, guid: 8d06ceefb975f2144a1586797f4c93c7,
         type: 3}
       propertyPath: HowManyFoodDrop
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 459444812687066565, guid: 8d06ceefb975f2144a1586797f4c93c7,
         type: 3}
       propertyPath: HowManyFoodDrop
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 490530280540423677, guid: 8d06ceefb975f2144a1586797f4c93c7,
         type: 3}
       propertyPath: HowManyFoodDrop
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2062064767539699774, guid: 8d06ceefb975f2144a1586797f4c93c7,
         type: 3}
@@ -4757,12 +4755,12 @@ PrefabInstance:
     - target: {fileID: 8058465820276914264, guid: 8d06ceefb975f2144a1586797f4c93c7,
         type: 3}
       propertyPath: HowManyFoodDrop
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8301266340463911806, guid: 8d06ceefb975f2144a1586797f4c93c7,
         type: 3}
       propertyPath: HowManyFoodDrop
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5192,8 +5190,9 @@ MonoBehaviour:
   filledBar: {fileID: 618118996}
   minRage: 0
   maxRage: 2000
-  currentRage: 400
+  currentRage: 0
   iconaRage: {fileID: 1488347961}
+  health: {fileID: 1338260757}
 --- !u!212 &1488347963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5595,6 +5594,8 @@ MonoBehaviour:
   rageBarManager: {fileID: 1488347962}
   gameFlowManager: {fileID: 1380338879}
   vendingMachineManager: {fileID: 261307243}
+  H: {fileID: 1338260757}
+  pippo: {fileID: 920223463}
 --- !u!1 &1671106803
 GameObject:
   m_ObjectHideFlags: 0
@@ -9004,6 +9005,11 @@ MonoBehaviour:
     m_Bits: 256
   canDash: 0
   isPowerUp: 0
+  vfxPrefab: {fileID: 1915669233600462698, guid: e1d7e69e9e7677540809824cef239cf3,
+    type: 3}
+  H: {fileID: 1338260757}
+  rageBarManager: {fileID: 1488347962}
+  pippo: {fileID: 920223463}
   gameFlowManager: {fileID: 1380338879}
 --- !u!1 &240195398366532545
 GameObject:

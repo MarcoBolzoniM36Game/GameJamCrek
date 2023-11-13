@@ -8,10 +8,12 @@ public class RageBarManager : MonoBehaviour
     public int minRage, maxRage;
     public int currentRage;
     public RectTransform iconaRage;
+    public PlayerHealth health;
 
 
     private void Start()
     {
+        health = GetComponent<PlayerHealth>();
 
         currentRage = 400;
        
@@ -19,7 +21,7 @@ public class RageBarManager : MonoBehaviour
 
 
     }
-    public void Rage(int points)
+    public void AddRage(int points)
     {
         currentRage = (currentRage + points);
         float nuovaPosizioneX = filledBar.rectTransform.sizeDelta.x * currentRage * 0.001f;
@@ -49,9 +51,10 @@ public class RageBarManager : MonoBehaviour
 
         if (currentRage == 0)
         {
-            Debug.Log("ALESSIO MAZZAPIODA");
+            Debug.Log("PERSO");
             currentRage = 400;
             iconaRage.anchoredPosition = new Vector2(currentRage, 0);
+            health.TakeDamage(25);
         }
 
     }

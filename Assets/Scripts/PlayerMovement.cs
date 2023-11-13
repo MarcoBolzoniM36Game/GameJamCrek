@@ -31,6 +31,15 @@ public class PlayerMovement : MonoBehaviour
     private float dashCooldown=2f;
     [SerializeField]private bool isPowerUp=false;
 
+
+    [SerializeField]
+    private GameObject vfxPrefab;
+    public PlayerHealth H;
+    public RageBarManager rageBarManager;
+
+
+    public TestAudio pippo;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -169,4 +178,31 @@ public class PlayerMovement : MonoBehaviour
         canDash = true;
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        GameObject c = other.gameObject;
+        if (other.CompareTag("cazzo"))
+        {
+            //PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
+            //if (pm != null)
+            //{
+            //RestartGameFlow();
+            //}
+            Destroy(c);
+            Instantiate(vfxPrefab, transform.position, Quaternion.identity);
+
+            rageBarManager.AddRage(400);
+
+            pippo.Play("Puff");
+
+            //if (vfxPrefab != null)
+            //{
+
+
+            //}
+        }
+
+    }
+    
 }

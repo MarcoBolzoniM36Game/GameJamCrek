@@ -68,6 +68,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrecsPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4868dd0768ee3a24093742c8778fa7c1,
+        type: 3}
+      propertyPath: m_TagString
+      value: cazzo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80,10 +85,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4041116078297584917}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4868dd0768ee3a24093742c8778fa7c1,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -3464781225754741846}
   m_SourcePrefab: {fileID: 100100000, guid: 4868dd0768ee3a24093742c8778fa7c1, type: 3}
 --- !u!1 &7033548095865734083 stripped
 GameObject:
@@ -139,17 +140,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.44681144, y: 1.3653058, z: 0.2900278}
   m_Center: {x: -0.000000022351742, y: 0, z: -0.000000014901161}
---- !u!114 &-3464781225754741846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7033548095865734083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65110603264482c4f92d11a12806aafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vfxPrefab: {fileID: 1915669233600462698, guid: e1d7e69e9e7677540809824cef239cf3,
-    type: 3}

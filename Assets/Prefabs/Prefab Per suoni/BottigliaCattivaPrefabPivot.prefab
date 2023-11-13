@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2214506395554961098}
   m_Layer: 0
   m_Name: BottigliaCattivaPrefabPivot
-  m_TagString: Untagged
+  m_TagString: cazzo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,9 +95,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65110603264482c4f92d11a12806aafb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vfxPrefab: {fileID: 1915669233600462698, guid: e1d7e69e9e7677540809824cef239cf3,
-    type: 3}
-  pippo: {fileID: 3982240082023163235, guid: c49f9372325636e4e894f2a0a995448d, type: 3}
 --- !u!1 &2958202433712063285
 GameObject:
   m_ObjectHideFlags: 0

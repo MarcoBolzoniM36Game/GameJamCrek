@@ -96,10 +96,9 @@ GameObject:
   - component: {fileID: 3380134821729045330}
   - component: {fileID: 8003284115675019231}
   - component: {fileID: 1006526211341734823}
-  - component: {fileID: 4828467208395584126}
   m_Layer: 0
   m_Name: PatatinePrefabPivot
-  m_TagString: Untagged
+  m_TagString: cazzo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,17 +217,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4828467208395584126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944930722971535101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65110603264482c4f92d11a12806aafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vfxPrefab: {fileID: 1915669233600462698, guid: e1d7e69e9e7677540809824cef239cf3,
-    type: 3}

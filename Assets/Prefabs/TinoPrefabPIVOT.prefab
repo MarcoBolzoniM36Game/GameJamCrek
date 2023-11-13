@@ -94,10 +94,9 @@ GameObject:
   - component: {fileID: 6465860627613508219}
   - component: {fileID: 6832926385167561849}
   - component: {fileID: 5164899414567158980}
-  - component: {fileID: 2694920485341054194}
   m_Layer: 0
   m_Name: TinoPrefabPIVOT
-  m_TagString: Untagged
+  m_TagString: cazzo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,17 +165,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.7978839, y: 1.5671492, z: 1.1230478}
   m_Center: {x: -0.085662186, y: 0.28357458, z: -0.061523885}
---- !u!114 &2694920485341054194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8693262078278698878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65110603264482c4f92d11a12806aafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vfxPrefab: {fileID: 1915669233600462698, guid: e1d7e69e9e7677540809824cef239cf3,
-    type: 3}

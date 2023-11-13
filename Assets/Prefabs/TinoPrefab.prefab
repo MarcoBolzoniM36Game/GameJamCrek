@@ -68,6 +68,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TinoPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7ce310b313916b8418ad82a96c056bd5,
+        type: 3}
+      propertyPath: m_TagString
+      value: cazzo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80,10 +85,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -6639614361219885222}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7ce310b313916b8418ad82a96c056bd5,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -1529457519829811173}
   m_SourcePrefab: {fileID: 100100000, guid: 7ce310b313916b8418ad82a96c056bd5, type: 3}
 --- !u!1 &3125752432706721858 stripped
 GameObject:
@@ -139,17 +140,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0216485, y: 0.37210602, z: 0.1591548}
   m_Center: {x: 0, y: 0.00075015426, z: 0.03523959}
---- !u!114 &-1529457519829811173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3125752432706721858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65110603264482c4f92d11a12806aafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vfxPrefab: {fileID: 1915669233600462698, guid: e1d7e69e9e7677540809824cef239cf3,
-    type: 3}
