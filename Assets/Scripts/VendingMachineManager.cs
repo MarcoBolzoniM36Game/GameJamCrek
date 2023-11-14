@@ -63,7 +63,7 @@ public class VendingMachineManager : MonoBehaviour
             GameObject slot = Instantiate(SlotPrefab, pos, Quaternion.identity, gameObject.transform);
             SingleSlotManager ssm = slot.GetComponent<SingleSlotManager>();
             SetupSlot(ssm, 4, pos);
-
+            ssm.pippo = AudioManager.Instance.GetComponent<TestAudio>();
             Slots.Add(slot);
         }
 
@@ -87,7 +87,7 @@ public class VendingMachineManager : MonoBehaviour
             if(ta != null)
             {
 
-                //    ta.pippo = AudioManager.Instance.GetComponent<TestAudio>();
+                //ta.pippo = AudioManager.Instance.GetComponent<TestAudio>();
             }
         }
     }

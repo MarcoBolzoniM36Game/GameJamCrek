@@ -40,6 +40,8 @@ public class SingleSlotManager : MonoBehaviour
     [SerializeField]
     private Light slotLight;
 
+    public TestAudio pippo;
+
     public void Illuminate()
     {
         if (SlotLight != null)
@@ -94,6 +96,7 @@ public class SingleSlotManager : MonoBehaviour
     private IEnumerator MoveProduct()
     {
         Anim.SetBool("RotateSpring", true);
+        pippo.Play("Mechanism");
         Anim2.SetInteger("Index", SlotProducts.Count - 1);
         Anim2.SetTrigger("MoveFall");
         yield return new WaitForSeconds(2);

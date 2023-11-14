@@ -208,7 +208,14 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (cl != null)
             {
+                if (cl.HowManyFoodDrop==2) 
+                {
+                    vendingMachineManager.SelectFood(cl.HowManyFoodDrop/2);
+                }
+                else 
+                {
                 vendingMachineManager.SelectFood(cl.HowManyFoodDrop);
+                }
             }
         }
 
