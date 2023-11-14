@@ -99,6 +99,8 @@ public class ClientManager : MonoBehaviour
 
                 playerMovement.canDash = c.canActiveDash;
 
+                c.targhetta.SetActive(true);
+
                 if (c.canProvideLife)
                 {
                     // aggiungere una vita al player

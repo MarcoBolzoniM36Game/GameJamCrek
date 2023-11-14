@@ -15,4 +15,6 @@ public class Client : MonoBehaviour
     public bool canActiveDash = false;
 
     public int HowManyFoodDrop = 1;
+
+    public GameObject targhetta;
 }

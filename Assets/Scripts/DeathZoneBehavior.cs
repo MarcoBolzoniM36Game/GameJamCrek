@@ -53,6 +53,7 @@ public class DeathZoneBehavior : MonoBehaviour
             else if (cl != null && rageBarManager.currentRage == 0)
             {
                 cm.ActiveClient(false);
+                cl.targhetta.SetActive(false);
                 ClientSatisfied();
             }
             else if (cl != null)

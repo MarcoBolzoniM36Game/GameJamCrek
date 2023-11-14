@@ -203,6 +203,7 @@ public class PlayerMovement : MonoBehaviour
             if (cl != null && rageBarManager.currentRage ==2000) 
             {
                 cm.ActiveClient(false);
+                cl.targhetta.SetActive(false);
                 gmf.RestartGameFlow();
             }
             else if (cl != null)
