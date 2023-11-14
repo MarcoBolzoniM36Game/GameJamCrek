@@ -12,12 +12,6 @@ public class GameFlowManager : MonoBehaviour
 
     float StartDelay = 3f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     bool once = true;
 
     void Update()

@@ -36,6 +36,9 @@ public class PlayerMovement : MonoBehaviour
     private GameObject vfxPrefab;
     public PlayerHealth H;
     public RageBarManager rageBarManager;
+    public VendingMachineManager vendingMachineManager;
+    public ClientManager cm;
+    public GameFlowManager gmf;
 
 
     public TestAudio pippo;
@@ -45,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         myCollider = GetComponent<CapsuleCollider>();
         anim = GetComponent<Animator>();
+        //cm = GetComponent<ClientManager>();
     }
     private void Start()
     {
@@ -182,25 +186,29 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         GameObject c = other.gameObject;
+
+        Client cl = cm.currentClient.GetComponent<Client>();
+
+
         if (other.CompareTag("cazzo"))
         {
-            //PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
-            //if (pm != null)
-            //{
-            //RestartGameFlow();
-            //}
             Destroy(c);
-            Instantiate(vfxPrefab, transform.position, Quaternion.identity);
 
-            rageBarManager.AddRage(400);
+            Instantiate(vfxPrefab, transform.position, Quaternion.identity);
 
             pippo.Play("Puff");
 
-            //if (vfxPrefab != null)
-            //{
+            rageBarManager.AddRage(400);
 
-
-            //}
+            if (cl != null && rageBarManager.currentRage ==2000) 
+            {
+                cm.ActiveClient(false);
+                gmf.RestartGameFlow();
+            }
+            else if (cl != null)
+            {
+                vendingMachineManager.SelectFood(cl.HowManyFoodDrop);
+            }
         }
 
     }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.VFX;
 
 public class VendingMachineManager : MonoBehaviour
@@ -34,6 +35,7 @@ public class VendingMachineManager : MonoBehaviour
     //private Transform spawnPoint;
     [SerializeField]
     private Transform vfxSpawnPoint;
+   
     private void Start()
     {
         SetupMachine(6, 6);
@@ -116,6 +118,7 @@ public class VendingMachineManager : MonoBehaviour
         }
     }
 
+    public UnityEvent OnFoodDisplayed = new UnityEvent();
 
     public void SelectFood(int howManyFoodDrop)
     {
@@ -138,10 +141,11 @@ public class VendingMachineManager : MonoBehaviour
 
             chosenNumber.Add(rumble);
         }
+        OnFoodDisplayed?.Invoke();
         DropFood();
     }
 
-    private void DropFood()
+    public void DropFood()
     {
         for(int i = 0; i < chosenNumber.Count;i++) 
         {

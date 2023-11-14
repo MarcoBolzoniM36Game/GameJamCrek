@@ -26,7 +26,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = "£ "+scoreCount;
+            scoreText.text = " € "+scoreCount;
         }
     }
 }

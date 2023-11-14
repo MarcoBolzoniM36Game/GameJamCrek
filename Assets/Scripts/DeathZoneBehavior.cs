@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class DeathZoneBehavior : MonoBehaviour
 {
-    [SerializeField]
-    private RageBarManager rageBarManager;
+    
+    public RageBarManager rageBarManager;
     [SerializeField]
     private GameFlowManager gameFlowManager;
     [SerializeField]
     private VendingMachineManager vendingMachineManager;
+    public ClientManager cm;
 
     //[SerializeField]
     //private GameObject vfxPrefab;
@@ -20,7 +21,7 @@ public class DeathZoneBehavior : MonoBehaviour
 
     private void Start()
     {
-        rageBarManager = GetComponent<RageBarManager>();
+        //rageBarManager = GetComponent<RageBarManager>();
     }
     public void ClientSatisfied()
     {
@@ -33,18 +34,31 @@ public class DeathZoneBehavior : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         GameObject c = other.gameObject;
+
+        Client cl = cm.currentClient.GetComponent<Client>();
+
         if (other.CompareTag("cazzo"))
         {
-            //DeathZoneBehavior dzb = other.gameObject.GetComponent<DeathZoneBehavior>();
-            //if (dzb != null)
-            //{
-            //}
-            Destroy(c);
-            CameraShake.Invoke();
-            pippo.Play("Drop");
-            H.TakeDamage(25);
-            ClientSatisfied();
-            rageBarManager.Satisfied(400);
+
+               Destroy(c);
+               CameraShake.Invoke();
+               pippo.Play("Drop");
+
+               rageBarManager.Satisfied(400);
+
+            if (cl != null && rageBarManager.currentRage == 2000)
+            {
+                return;
+            }
+            else if (cl != null && rageBarManager.currentRage == 0)
+            {
+                cm.ActiveClient(false);
+                ClientSatisfied();
+            }
+            else if (cl != null)
+            {
+                vendingMachineManager.SelectFood(cl.HowManyFoodDrop);
+            }
         }
     }
 }

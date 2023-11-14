@@ -14,42 +14,30 @@ public class ClientManager : MonoBehaviour
     public VendingMachineManager vendingMachine;
     public PlayerMovement playerMovement;
     public RageBarManager rageManger;
-
-    public UnityEvent ChangeClient = new UnityEvent();
-
-    //void Start()
-    //{
-    //    //ActiveClient(true);
-
-    //}
-
-
-    void Update()
+    public GameFlowManager gameFlow;
+    
+    void Start()
     {
-        //ChangeClientWithRage();
-        //    if (Input.GetKeyDown(KeyCode.K))
-        //    {
-        //        ActiveClient(false);
-        //    }
-        //    //if (Input.GetKeyDown(KeyCode.J))
-        //    //{
-        //    //    ActiveClient(true);
-        //    //}
-
-        //    //CountClient();
+        CountClient();
     }
-
     public void ActiveClient(bool i) 
     {
-        if (i)
-        {
-            int n = Random.Range(0, clientList.Length);
+        int n = Random.Range(0, clientList.Length);
 
-            GameObject g = clientList[n];
+        GameObject g = clientList[n];
+
+        if (i==true)
+        {
+
+
             g.SetActive(i);
+
             currentClient = g;
+
             currentFoodCatch = 0;
+
             Debug.Log("CLIENT: " + currentClient.name);
+
         }
         else
         {
@@ -60,7 +48,9 @@ public class ClientManager : MonoBehaviour
     public void FoodCatch()
     {
         currentFoodCatch++;
+
         Client c = currentClient.GetComponent<Client>();
+
         if (c != null)
         {
             if (currentFoodCatch == c.HowManyFoodDrop)
@@ -89,47 +79,32 @@ public class ClientManager : MonoBehaviour
         else if (rageManger.currentRage >= 1600)
         {
             Debug.Log("MILLEMILAAA!!");
-            //ActiveClient(false);
-            //ChangeClient?.Invoke();
         }
         else if (rageManger.currentRage <= 0)
         {
             score.AddScore(-2 * i);
-            //Debug.Log("ZEROOO!!");
-            // tolgo una vita al player
-            //ActiveClient(false);
-            //ChangeClient?.Invoke();
         }
     }
 
     public void CountClient()
     {
-        Client c = currentClient.GetComponent<Client>();
-        if (c != null)
+        if (currentClient != null)
         {
-            StateScore(c.ScoreMultiplier);
-            vendingMachine.SelectFood(c.HowManyFoodDrop);
-            playerMovement.canDash = c.canActiveDash;
-            if (c.canProvideLife)
+            Client c = currentClient.GetComponent<Client>();
+            if (c != null)
             {
-                // aggiungere una vita al player
+                StateScore(c.ScoreMultiplier);
+
+                vendingMachine.SelectFood(c.HowManyFoodDrop);
+
+                playerMovement.canDash = c.canActiveDash;
+
+                if (c.canProvideLife)
+                {
+                    // aggiungere una vita al player
+                }
+                // TODO: se il nome verrà gestito in game con un TextMeshPRO, aggiornarlo
             }
-            // TODO: se il nome verrà gestito in game con un TextMeshPRO, aggiornarlo
-        }
-    }
-
-    public void ChangeClientWithRage()
-    {
-        if (rageManger.currentRage >= 2000)
-        {
-            ActiveClient(false);
-            ChangeClient?.Invoke();
-        }
-
-        if (rageManger.currentRage >= 0)
-        {
-            ActiveClient(false);
-            ChangeClient?.Invoke();
         }
     }
 }

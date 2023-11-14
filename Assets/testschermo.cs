@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class testschermo : MonoBehaviour
 {
@@ -9,23 +10,21 @@ public class testschermo : MonoBehaviour
     public List<Sprite> sprites; 
     public Image displayImage;  
     public float animationSpeed = 5f; 
-    public float spinDuration = 3f;   
+    public float spinDuration = 3f;
 
-    private int currentIndex; 
+    private int currentIndex;
+
  
 
-
-    private void Update()
+    public void VisualizeFood()
     {
-        if(Input.GetKeyDown(KeyCode.B))
-        {
-            StartCoroutine(SpinAnimation());
-        }
+        StartCoroutine(SpinAnimation());
     }
-    IEnumerator SpinAnimation()
+
+    private IEnumerator SpinAnimation()
     {
         float elapsedTime = 0f;
-
+        Debug.Log("CIAOOOOO!!!!");
         while (elapsedTime < spinDuration)
         {
             currentIndex = Random.Range(0, sprites.Count); 
