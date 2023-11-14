@@ -1362,9 +1362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c864ac391cefb6f4188ef2b838de486f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pippo:
-  - {fileID: 239186936}
-  - {fileID: 316826516}
+  coin: {fileID: 239186940}
+  crek: {fileID: 316826517}
 --- !u!4 &1948074527
 Transform:
   m_ObjectHideFlags: 0
