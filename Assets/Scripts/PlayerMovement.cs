@@ -9,18 +9,25 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     private bool isFacingRight = true;
     private float horizontal;
+    public Vector2 axis;
     private float speed = 5f;
     private float jumpPower = 10f;
-    private CapsuleCollider myCollider;
+    public CapsuleCollider myCollider;
     public Animator anim;
-    
-   
+
+    public Transform myTransform;
+    //public int RX = 90;
+    //public int SX = -90;
+
+
     [Header("Ground Check")]
     public Transform groundCheck;
     public LayerMask groundLayer;
     public LayerMask groundLayerS;
     public LayerMask groundLayer0;
     private bool isJump=false;
+
+    //public bool jumping=false;
 
 
     [Header("Dash Variables")]
@@ -65,14 +72,14 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
-        if(!isFacingRight && horizontal > 0f)
-        {
-            Flip();
-        }
-        else if(isFacingRight && horizontal < 0f)
-        {
-            Flip();
-        }
+        //if(!isFacingRight && horizontal > 0f)
+        //{
+        //    Flip();
+        //}
+        //else if(isFacingRight && horizontal < 0f)
+        //{
+        //    Flip();
+        //}
 
         if(Input.GetKeyDown(KeyCode.LeftShift) && canDash && isPowerUp)
         {
@@ -82,12 +89,46 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S) && IsGroundedS())
         {
             myCollider.enabled = false;
-     
+
         }
         else if (Input.GetKeyUp(KeyCode.S) || IsGrounded0())
         {
            myCollider.enabled = true;
 
+        }
+
+        if ((int)axis.x ==1)
+        {
+            //myTransform.transform.rotation = Quaternion.Euler(0, 90, 0);
+            myTransform.transform.localEulerAngles = new Vector3(0, 80, 0);
+        }
+
+        else if ((int)axis.x == -1)
+        {
+            //myTransform.transform.transform.rotation = Quaternion.Euler(0, -90, 0);
+            myTransform.transform.localEulerAngles = new Vector3(0, -80, 0);
+        }
+        else if((int)axis.x == 0)
+        {
+            myTransform.transform.localEulerAngles = new Vector3(0, 0, 0);
+        }
+
+        //if (!jumping)
+        //{
+        //    anim.SetBool("Muovo", axis.x != 0);
+        //}
+        //else
+        //{
+        //    anim.SetBool("Muovo", false);
+        //}
+
+        if (Input.GetKey(KeyCode.Space) || (Input.GetKey(KeyCode.S)))
+        {
+            anim.SetBool("Jumpo", true);
+        }
+        else
+        {
+            anim.SetBool("Jumpo", false);
         }
     }
 
@@ -109,7 +150,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpPower);
                 isJump = true;
-                
+
             }
 
         }
@@ -123,50 +164,65 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded())
         {
             isJump = false;
+                
             
         }
     }
+
+
+    //private void LateUpdate()
+    //{
+
+
+    //}
+
+
+
+
     private bool IsGrounded0()
     {
         return Physics.CheckSphere(groundCheck.position, 0.2f, groundLayer0); 
         
         
         //return GetComponent<Rigidbody>().velocity.y <= 0;
-    }private bool IsGrounded()
+    }
+    private bool IsGrounded()
     {
         return Physics.CheckSphere(groundCheck.position, 0.2f, groundLayer); 
        
         
         //return GetComponent<Rigidbody>().velocity.y <= 0;
     }
-    
     private bool IsGroundedS()
     {
         return Physics.CheckSphere(groundCheck.position, 0.2f, groundLayerS);
         
         //return GetComponent<Rigidbody>().velocity.y <= 0;
     }
-
-    private void Flip() 
-    {
-        isFacingRight = !isFacingRight;
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1f;
-        transform.localScale = localScale;
-    }
+    //private void Flip() 
+    //{
+    //    isFacingRight = !isFacingRight;
+    //    Vector3 localScale = transform.localScale;
+    //    localScale.x *= -1f;
+    //    transform.localScale = localScale;
+    //}
 
     public void Move(InputAction.CallbackContext context)
     {
         Vector3 newRotation= new Vector3(0, 60, 0);
         horizontal = context.ReadValue<Vector2>().x;
+        axis = context.ReadValue<Vector2>();
+
         if (context.started)
         {
-            anim.SetBool("Walk", true);
+            anim.SetBool("Muovo", true);
         }
         if (context.canceled)
         {
-            anim.SetBool("Walk", false);
+            anim.SetBool("Muovo", false);
         }
+
+
     }
 
     private IEnumerator Dash()
@@ -189,6 +245,14 @@ public class PlayerMovement : MonoBehaviour
 
         Client cl = cm.currentClient.GetComponent<Client>();
 
+        //if (other.gameObject.layer == 6)
+        //{
+        //    jumping = false;
+        //}   
+        //if (other.gameObject.layer == 7)
+        //{
+        //    jumping = false;
+        //}
 
         if (other.CompareTag("cazzo"))
         {

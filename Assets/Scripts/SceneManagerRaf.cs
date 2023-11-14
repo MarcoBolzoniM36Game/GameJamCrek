@@ -29,6 +29,7 @@ public class SceneManagerRaf : MonoBehaviour
 
     void Delay()
     {
-        SceneManager.LoadScene("GameScene");
+        /*SceneManager.LoadScene("GameScene");*/
+        SceneManager.LoadScene("GameScene_RaffaTest");
     }
 }
