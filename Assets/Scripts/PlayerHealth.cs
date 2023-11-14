@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.VFX;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -48,7 +49,7 @@ public class PlayerHealth : MonoBehaviour
         }
         else if (currentHealth == 0)
         {
-            //GAMEOVER
+            SceneManager.LoadScene("GameOver");
         }
     }
 
