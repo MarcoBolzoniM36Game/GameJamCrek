@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private float jumpPower = 10f;
     public CapsuleCollider myCollider;
     public Animator anim;
-
+    public AudioSource jump;
     public Transform myTransform;
     //public int RX = 90;
     //public int SX = -90;
@@ -125,6 +125,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) || (Input.GetKey(KeyCode.S)))
         {
             anim.SetBool("Jumpo", true);
+            jump.Play();
         }
         else
         {

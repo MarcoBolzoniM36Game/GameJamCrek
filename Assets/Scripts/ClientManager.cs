@@ -109,20 +109,6 @@ public class ClientManager : MonoBehaviour
                 {
                     return;
                 }
-
-
-
-
-                //if (c.canProvideLife)
-                //{
-                //    ph.canProvideLife = true;
-                //}
-                //else if (c.canProvideLife == false)
-                //{
-                //    ph.canProvideLife = false;
-
-                //}
-                // TODO: se il nome verrà gestito in game con un TextMeshPRO, aggiornarlo
             }
         }
     }

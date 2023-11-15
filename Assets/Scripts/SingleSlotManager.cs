@@ -50,6 +50,7 @@ public class SingleSlotManager : MonoBehaviour
         }
     }
 
+    
     public void Deilluminate()
     {
         if (SlotLight != null)
