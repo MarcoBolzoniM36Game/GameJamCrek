@@ -4744,6 +4744,8 @@ MonoBehaviour:
   fivePercentSprite: {fileID: 21300000, guid: bd81815ecb82fb44ea63f0d8d6a100fe, type: 3}
   maxHealth: 100
   currentHealth: 100
+  canProvideLife: 0
+  cm: {fileID: 2062064768359274800}
 --- !u!212 &1338260758
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9791,7 +9793,7 @@ MonoBehaviour:
   canProvideLife: 0
   rageAmount: 400
   canActiveDash: 0
-  HowManyFoodDrop: 2
+  HowManyFoodDrop: 1
   targhetta: {fileID: 508414696}
 --- !u!114 &420834532878212780
 MonoBehaviour:
@@ -9957,7 +9959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: INDECISEU
   ScoreMultiplier: 4
-  canProvideLife: 0
+  canProvideLife: 1
   rageAmount: 400
   canActiveDash: 1
   HowManyFoodDrop: 1
@@ -18522,6 +18524,7 @@ MonoBehaviour:
     type: 3}
   rageManger: {fileID: 1488347962}
   gameFlow: {fileID: 1380338879}
+  ph: {fileID: 1338260757}
 --- !u!222 &2101697631177352942
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25526,7 +25529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: MARCO
   ScoreMultiplier: 1
-  canProvideLife: 0
+  canProvideLife: 1
   rageAmount: 400
   canActiveDash: 0
   HowManyFoodDrop: 1
@@ -25869,8 +25872,8 @@ MonoBehaviour:
   ScoreMultiplier: 3
   canProvideLife: 0
   rageAmount: 400
-  canActiveDash: 0
-  HowManyFoodDrop: 2
+  canActiveDash: 1
+  HowManyFoodDrop: 1
   targhetta: {fileID: 1006302004}
 --- !u!1 &8331148054998194490
 GameObject:

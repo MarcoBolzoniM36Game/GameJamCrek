@@ -18,8 +18,43 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth = 100;
     private SpriteRenderer spriteRenderer;
+    public bool canProvideLife = true;
+    public ClientManager cm;
 
-    
+    float StartDelay = 3f;
+
+    private void Update()
+    {
+        if (canProvideLife)
+        {
+            StartCoroutine(nameof(CanLife));
+        }
+    }
+
+
+    public IEnumerator CanLife()
+    {
+        canProvideLife = false;
+        yield return new WaitForSeconds(StartDelay);
+        LifeUp();
+    }
+
+    public void Yeaah() 
+    {
+        canProvideLife = true;
+    }
+
+    public void LifeUp()
+    {
+        Client cl = cm.currentClient.GetComponent<Client>();
+
+        if (cl.canProvideLife && currentHealth < maxHealth)
+        {
+
+            TakeDamage(-20);
+        }
+    }
+
 
     public void TakeDamage(int damage)
     {

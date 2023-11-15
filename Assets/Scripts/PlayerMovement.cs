@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Dash Variables")]
     public bool canDash = false;
     private bool isDashing;
-    private float dashPower=15f;
+    private float dashPower=30F;
     private float dashTime=0.2f;
     private float dashCooldown=2f;
     [SerializeField]private bool isPowerUp=false;
@@ -72,16 +72,16 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
-        //if(!isFacingRight && horizontal > 0f)
-        //{
-        //    Flip();
-        //}
-        //else if(isFacingRight && horizontal < 0f)
-        //{
-        //    Flip();
-        //}
+        if (!isFacingRight && horizontal > 0f)
+        {
+            Flip();
+        }
+        else if (isFacingRight && horizontal < 0f)
+        {
+            Flip();
+        }
 
-        if(Input.GetKeyDown(KeyCode.LeftShift) && canDash && isPowerUp)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && isPowerUp)
         {
             StartCoroutine(Dash());
         }
@@ -130,6 +130,10 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("Jumpo", false);
         }
+
+
+
+
     }
 
     [SerializeField]
@@ -167,6 +171,15 @@ public class PlayerMovement : MonoBehaviour
                 
             
         }
+        Client cl = cm.currentClient.GetComponent<Client>();
+        if (cl.canActiveDash)
+        {
+            canDash = true;
+        }
+        else if (cl.canActiveDash==false)
+        {
+            canDash = false;
+        }
     }
 
 
@@ -199,13 +212,13 @@ public class PlayerMovement : MonoBehaviour
         
         //return GetComponent<Rigidbody>().velocity.y <= 0;
     }
-    //private void Flip() 
-    //{
-    //    isFacingRight = !isFacingRight;
-    //    Vector3 localScale = transform.localScale;
-    //    localScale.x *= -1f;
-    //    transform.localScale = localScale;
-    //}
+    private void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1f;
+        transform.localScale = localScale;
+    }
 
     public void Move(InputAction.CallbackContext context)
     {
