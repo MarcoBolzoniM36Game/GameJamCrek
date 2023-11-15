@@ -104,6 +104,30 @@ MonoBehaviour:
     playOnAwake: 0
     loop: 0
     spatialBlend: 0
+  - name: MusicGAME
+    clip: {fileID: 8300000, guid: d3bd1a6a11d5c0b4b857dfea7646e9f4, type: 3}
+    outputAudioMixerGroup: {fileID: 1982559544931740828, guid: 72e9eb48ffcc8a84c8cd50bb6b2e398c,
+      type: 2}
+    mute: 0
+    playOnAwake: 0
+    loop: 1
+    spatialBlend: 0
+  - name: MusicMENU
+    clip: {fileID: 8300000, guid: d3bd1a6a11d5c0b4b857dfea7646e9f4, type: 3}
+    outputAudioMixerGroup: {fileID: 1982559544931740828, guid: 72e9eb48ffcc8a84c8cd50bb6b2e398c,
+      type: 2}
+    mute: 0
+    playOnAwake: 0
+    loop: 1
+    spatialBlend: 0
+  - name: Creck
+    clip: {fileID: 8300000, guid: a7f849205bda7db438f3b487599af01a, type: 3}
+    outputAudioMixerGroup: {fileID: 1982559544931740828, guid: 72e9eb48ffcc8a84c8cd50bb6b2e398c,
+      type: 2}
+    mute: 0
+    playOnAwake: 0
+    loop: 0
+    spatialBlend: 0
   masterSlider: {fileID: 0}
   musicSlider: {fileID: 0}
   voiceSlider: {fileID: 0}
@@ -120,7 +144,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 1982559544931740828, guid: 72e9eb48ffcc8a84c8cd50bb6b2e398c,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 18cf859627d6ebd43ab10e6e358e4302, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

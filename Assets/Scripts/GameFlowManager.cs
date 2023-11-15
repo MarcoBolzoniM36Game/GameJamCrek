@@ -7,12 +7,16 @@ public class GameFlowManager : MonoBehaviour
     [SerializeField]
     private ClientManager clientManager;
 
-    [SerializeField]
     private TestAudio audio;
 
     float StartDelay = 3f;
 
     bool once = true;
+
+    private void Start()
+    {
+        audio = AudioManager.Instance.GetComponent<TestAudio>();
+    }
 
     void Update()
     {

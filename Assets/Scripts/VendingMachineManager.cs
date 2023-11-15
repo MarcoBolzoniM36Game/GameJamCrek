@@ -25,8 +25,8 @@ public class VendingMachineManager : MonoBehaviour
     private List<GameObject> productsPrefabs = new List<GameObject>();
 
 
-    [SerializeField]
     private TestAudio audio;
+
     [SerializeField]
     private GameObject player;
     [SerializeField]
@@ -38,6 +38,8 @@ public class VendingMachineManager : MonoBehaviour
    
     private void Start()
     {
+        audio = AudioManager.Instance.GetComponent<TestAudio>();
+
         SetupMachine(6, 6);
 
         SpawnPlayer();

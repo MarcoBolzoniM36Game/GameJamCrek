@@ -30,4 +30,9 @@ public class TestAudio : MonoBehaviour
         gameObject.SetSound(audioSource, sound);
         gameObject.PlaySound(audioSource);
     }
+
+    public void Stop(string clipName)
+    {
+        gameObject.StopSound(audioSource);
+    }
 }

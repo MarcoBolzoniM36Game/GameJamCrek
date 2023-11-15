@@ -17,10 +17,11 @@ public class DeathZoneBehavior : MonoBehaviour
     public PlayerHealth H;
 
 
-    public TestAudio pippo;
+    private TestAudio audio;
 
     private void Start()
     {
+        audio = AudioManager.Instance.GetComponent<TestAudio>();
         //rageBarManager = GetComponent<RageBarManager>();
     }
     public void ClientSatisfied()
@@ -42,7 +43,7 @@ public class DeathZoneBehavior : MonoBehaviour
 
                Destroy(c);
                CameraShake.Invoke();
-               pippo.Play("Drop");
+               audio.Play("Drop");
 
                rageBarManager.Satisfied(400);
 

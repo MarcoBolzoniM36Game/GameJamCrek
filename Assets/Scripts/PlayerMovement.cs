@@ -48,13 +48,14 @@ public class PlayerMovement : MonoBehaviour
     public GameFlowManager gmf;
 
 
-    public TestAudio pippo;
+    private TestAudio audio;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         myCollider = GetComponent<CapsuleCollider>();
         anim = GetComponent<Animator>();
+        audio = AudioManager.Instance.GetComponent<TestAudio>();
         //cm = GetComponent<ClientManager>();
     }
     private void Start()
@@ -274,7 +275,7 @@ public class PlayerMovement : MonoBehaviour
 
             Instantiate(vfxPrefab, transform.position, Quaternion.identity);
 
-            pippo.Play("Puff");
+            audio.Play("Puff");
 
             rageBarManager.AddRage(400);
 
