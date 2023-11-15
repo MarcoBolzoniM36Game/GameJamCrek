@@ -1247,8 +1247,8 @@ Camera:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -10307,7 +10307,7 @@ MonoBehaviour:
   ScoreMultiplier: 4
   canProvideLife: 1
   rageAmount: 400
-  canActiveDash: 1
+  canActiveDash: 0
   HowManyFoodDrop: 1
   targhetta: {fileID: 1869031004}
 --- !u!114 &490530279208074483
@@ -22202,7 +22202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: MARCO
   ScoreMultiplier: 1
-  canProvideLife: 1
+  canProvideLife: 0
   rageAmount: 400
   canActiveDash: 0
   HowManyFoodDrop: 1

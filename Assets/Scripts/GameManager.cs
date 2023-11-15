@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     public const string INTRO_SCENE_NAME = "IntroScene";
     public const string MAINMENU_SCENE_NAME = "MainMenuScene";
-    public const string GAME_SCENE_NAME = "GameScene";
+    public const string GAME_SCENE_NAME = "GameScene_RaffaTest";
 
     #region Menu
 
