@@ -13,6 +13,10 @@ public class GameFlowManager : MonoBehaviour
 
     bool once = true;
 
+    //public Difficoltà dif;
+
+
+
     private void Start()
     {
         audio = AudioManager.Instance.GetComponent<TestAudio>();
@@ -29,6 +33,9 @@ public class GameFlowManager : MonoBehaviour
 
     public IEnumerator AptendDelay()
     {
+
+        //Client cl = clientManager.currentClient.GetComponent<Client>();
+
         audio.Play("InsertCoin");
         once = false;
         yield return new WaitForSeconds(StartDelay);
@@ -36,6 +43,8 @@ public class GameFlowManager : MonoBehaviour
         // poi lancio un evento di scelta e avvio di un client
         clientManager.ActiveClient(true);
         clientManager.CountClient();
+        //dif.SpawnPrefabBlock(cl.blockPoint);
+        
 
         Debug.Log("ONCE COROUTINE");
     }

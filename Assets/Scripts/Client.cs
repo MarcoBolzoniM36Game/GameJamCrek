@@ -17,4 +17,6 @@ public class Client : MonoBehaviour
     public int HowManyFoodDrop = 1;
 
     public GameObject targhetta;
+
+    public int blockPoint;
 }

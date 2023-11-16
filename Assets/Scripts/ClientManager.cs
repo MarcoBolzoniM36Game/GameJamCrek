@@ -16,6 +16,7 @@ public class ClientManager : MonoBehaviour
     public RageBarManager rageManger;
     public GameFlowManager gameFlow;
     public PlayerHealth ph;
+    public Difficoltà block;
     
     void Start()
     {
@@ -100,6 +101,13 @@ public class ClientManager : MonoBehaviour
                 playerMovement.canDash = c.canActiveDash;
 
                 c.targhetta.SetActive(true);
+
+               
+
+                //block.SpawnPrefabBlock(c.blockPoint);
+
+                
+                
 
                 if (c.canProvideLife)
                 {
