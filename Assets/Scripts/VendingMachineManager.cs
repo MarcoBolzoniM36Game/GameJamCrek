@@ -41,9 +41,26 @@ public class VendingMachineManager : MonoBehaviour
         audio = AudioManager.Instance.GetComponent<TestAudio>();
 
         SetupMachine(6, 6);
-
         SpawnPlayer();
     }
+
+
+
+    public void RefillMachine(int row = 6, int col = 6)
+    {
+        Debug.Log("REFILL");
+        for (int i = 0; i < Slots.Count; i++)
+        {
+            GameObject go = Slots[i];
+            SingleSlotManager ssm = go.GetComponent<SingleSlotManager>();
+            if (ssm.IsEmpty)
+            {
+                SetupSlot(ssm, 4, go.transform.position);
+                ssm.pippo = AudioManager.Instance.GetComponent<TestAudio>();
+            }
+        }
+    }
+
 
     /// <summary>
     /// Esegue il setup dell'intero distributore automatico
@@ -84,13 +101,13 @@ public class VendingMachineManager : MonoBehaviour
             GameObject prefab = productsPrefabs[Random.Range(0, productsPrefabs.Count)];
             GameObject product = Instantiate(prefab, slot.ProductStartPoints[i].position, Quaternion.identity, slot.ProductStartPoints[i]);
             slot.SlotProducts.Add(product);
-            FoodBehaviour ta =  product.GetComponent<FoodBehaviour>();
+            //FoodBehaviour ta =  product.GetComponent<FoodBehaviour>();
 
-            if(ta != null)
-            {
+            //if(ta != null)
+            //{
 
-                //ta.pippo = AudioManager.Instance.GetComponent<TestAudio>();
-            }
+            //    //ta.pippo = AudioManager.Instance.GetComponent<TestAudio>();
+            //}
         }
     }
 
@@ -145,6 +162,31 @@ public class VendingMachineManager : MonoBehaviour
         }
         OnFoodDisplayed?.Invoke();
         DropFood();
+        if (CheckForRefill(3))
+        {
+            RefillMachine();
+        }
+    }
+
+    private bool CheckForRefill(int numEmptySlot)
+    {
+        bool res = false;
+        int emplySlot = 0;
+        for (int i = 0; i < Slots.Count; i++)
+        {
+            GameObject slot = Slots[i];
+            SingleSlotManager ssm = slot.GetComponent<SingleSlotManager>();
+            if (ssm.IsEmpty)
+            {
+                emplySlot++;
+                if (emplySlot == numEmptySlot)
+                {
+                    res = true;
+                    break;
+                }
+            }
+        }
+        return res;
     }
 
     public void DropFood()

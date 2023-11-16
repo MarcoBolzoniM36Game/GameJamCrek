@@ -50,6 +50,7 @@ public class SingleSlotManager : MonoBehaviour
         }
     }
 
+    public bool IsEmpty { get { return (SlotProducts.Count == 0); } }
     
     public void Deilluminate()
     {
@@ -98,19 +99,32 @@ public class SingleSlotManager : MonoBehaviour
     {
         Anim.SetBool("RotateSpring", true);
         pippo.Play("Mechanism");
-        Anim2.SetInteger("Index", SlotProducts.Count - 1);
-        Anim2.SetTrigger("MoveFall");
-        yield return new WaitForSeconds(2);
-        Anim.SetBool("RotateSpring", false);
-        // sgancia oggetto
-        GameObject go = SlotProducts[SlotProducts.Count - 1];
-        go.transform.parent = null;
-        SlotProducts.Remove(go);
-        Collider c = go.GetComponent<Collider>();
-        c.enabled = true;
-        Rigidbody rb = go.GetComponent<Rigidbody>();
-        rb.useGravity = true;
+        if (SlotProducts.Count > 0)
+        {
+            Debug.Log("SlotProducts.Count: " + SlotProducts.Count);
+            int index = SlotProducts.Count - 1;
+            if (index >= 0 && index < SlotProducts.Count)
+            {
+                Anim2.SetInteger("Index", index);
+                Anim2.SetTrigger("MoveFall");
+                yield return new WaitForSeconds(2);
+                Anim.SetBool("RotateSpring", false);
+                // sgancia oggetto
+                if (index >= 0 && index < SlotProducts.Count)
+                {
+                    GameObject go = SlotProducts[index];
+                    if (go != null)
+                    {
+                        go.transform.parent = null;
+                        SlotProducts.Remove(go);
+                        Collider c = go.GetComponent<Collider>();
+                        c.enabled = true;
+                        Rigidbody rb = go.GetComponent<Rigidbody>();
+                        rb.useGravity = true;
+                    }
+                }
+            }
+        }
     }
-
 
 }

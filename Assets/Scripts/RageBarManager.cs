@@ -72,14 +72,14 @@ public class RageBarManager : MonoBehaviour
         iconaRage.anchoredPosition = new Vector2(currentRage, 0);
         canChange = true;
 
-        if (currentRage == 0)
+        if (currentRage <= 0)
         {
             int nw = 400;
             Debug.Log("PERSO");
             Invoke("Rage400", 1f);
             Invoke("Fake0", 2f);
             iconaRage.anchoredPosition = new Vector2(currentRage, 0);
-            health.TakeDamage(20);
+            health.TakeDamage(0);
             
             //if (clm != null)
             //{
